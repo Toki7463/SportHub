@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес - SportHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sport-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- Кнопка "Назад" в кружке -->
+                <a href="../index.html" class="back-circle" title="На главную">
+                    <span class="back-arrow">←</span>
+                </a>
+                
+                <div class="header__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li><a href="../index.html#sports" class="nav__link active">Виды спорта</a></li>
+                        <li><a href="../index.html#about" class="nav__link">О проекте</a></li>
+                        <li><a href="../index.html#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Кнопка переключения темы -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="sport-hero" style="background: linear-gradient(135deg, #00d2d3 0%, #01a3a4 100%);">
+        <div class="container">
+            <h1 class="sport-hero__title">Фитнес</h1>
+            <p class="sport-hero__subtitle">Здоровое тело - здоровый дух</p>
+        </div>
+    </section>
+
+    <section class="sport-content">
+        <div class="container">
+            <div class="sport-tabs">
+                <button class="tab-btn active" data-tab="theory">Теория и основы</button>
+                <button class="tab-btn" data-tab="technique">Упражнения</button>
+                <button class="tab-btn" data-tab="tactics">Программы</button>
+                <button class="tab-btn" data-tab="programs">Питание</button>
+                <button class="tab-btn" data-tab="test">📝 Тест</button>
+                <button class="tab-btn" data-tab="warmup">🔥 Разминка</button>
+            </div>
+
+            <!-- Вкладка Теория (РАСШИРЕННАЯ) -->
+            <div class="tab-content active" id="theory">
+                <h2>📚 Теория и основы фитнеса</h2>
+                
+                <div class="content-grid">
+                    <!-- Что такое фитнес -->
+                    <div class="content-card full-width">
+                        <h3>💪 Что такое фитнес?</h3>
+                        <p>Фитнес — это система физических упражнений и здорового образа жизни, направленная на поддержание хорошей физической формы, укрепление здоровья и коррекцию тела. Включает в себя силовые тренировки, кардио, растяжку и правильное питание.</p>
+                    </div>
+                    
+                    <!-- Принципы тренировок -->
+                    <div class="content-card full-width">
+                        <h3>⚖️ Основные принципы фитнеса</h3>
+                        <div class="technique-block">
+                            <h5>Регулярность</h5>
+                            <p>Тренировки должны быть систематическими. Лучше заниматься понемногу, но регулярно, чем раз в месяц по 3 часа.</p>
+                        </div>
+                        <div class="technique-block">
+                            <h5>Прогрессия нагрузок</h5>
+                            <p>Постепенное увеличение весов, повторений или интенсивности для постоянного прогресса.</p>
+                        </div>
+                        <div class="technique-block">
+                            <h5>Восстановление</h5>
+                            <p>Мышцы растут не во время тренировки, а во время отдыха. Сон и питание критически важны.</p>
+                        </div>
+                        <div class="technique-block">
+                            <h5>Разнообразие</h5>
+                            <p>Меняй упражнения и типы тренировок, чтобы избежать застоя и скуки.</p>
+                        </div>
+                        <div class="technique-block">
+                            <h5>Правильная техника</h5>
+                            <p>Лучше сделать меньше, но технически правильно, чем много, но с ошибками.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Типы фитнеса -->
+                    <div class="content-card full-width">
+                        <h3>🏋️ Типы фитнеса</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Силовой фитнес</h5>
+                            <ul>
+                                <li>Тренировки с отягощениями (гантели, штанги, тренажёры)</li>
+                                <li>Цель: рост мышц, увеличение силы</li>
+                                <li>Повторения: 6-12</li>
+                                <li>Подходы: 3-4</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Кардиотренировки</h5>
+                            <ul>
+                                <li>Бег, велосипед, плавание, эллипс, скакалка</li>
+                                <li>Цель: улучшение выносливости, сжигание жира</li>
+                                <li>Длительность: 20-60 минут</li>
+                                <li>Пульс: 120-150 ударов/мин</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Функциональный тренинг</h5>
+                            <ul>
+                                <li>Упражнения, имитирующие реальные движения</li>
+                                <li>Цель: улучшить координацию, баланс, прикладную силу</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Круговая тренировка</h5>
+                            <ul>
+                                <li>Упражнения выполняются одно за другим без отдыха</li>
+                                <li>Цель: выносливость + жиросжигание</li>
+                                <li>Круги: 3-5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Стретчинг (растяжка)</h5>
+                            <ul>
+                                <li>Упражнения на гибкость</li>
+                                <li>Цель: улучшить подвижность суставов, снизить риск травм</li>
+                                <li>Статическая растяжка: задержка в позе на 20-30 сек</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Йога и пилатес</h5>
+                            <ul>
+                                <li>Соединение дыхания, гибкости и силы</li>
+                                <li>Цель: общее оздоровление, гибкость, спокойствие</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Противопоказания -->
+                    <div class="content-card full-width">
+                        <h3>⚠️ Противопоказания и меры предосторожности</h3>
+                        <ul>
+                            <li><strong>Перед началом занятий</strong> обязательно проконсультируйтесь с врачом</li>
+                            <li><strong>При болях</strong> — остановитесь и выясните причину</li>
+                            <li><strong>Хронические заболевания</strong> — требуется особый подход и программа</li>
+                            <li><strong>Беременность</strong> — специальные программы под контролем врача</li>
+                            <li><strong>Грыжи, протрузии</strong> — исключить осевые нагрузки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Упражнения (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="technique">
+                <h2>🏋️ Базовые упражнения в фитнесе</h2>
+                
+                <div class="content-grid">
+                    <!-- Для груди и рук -->
+                    <div class="content-card full-width">
+                        <h3>💪 Упражнения для груди и рук</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Отжимания</h5>
+                            <p><strong>Техника:</strong> лёжа на животе, руки на ширине плеч, тело прямая линия, опуститься до касания грудью пола, выжаться вверх.</p>
+                            <p><strong>Варианты:</strong> от колен (легче), с узкой постановкой рук (трицепс), с широкой (грудь).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Жим гантелей лёжа</h5>
+                            <p><strong>Техника:</strong> лёжа на скамье, гантели над грудью, опустить до комфортной глубины, выжать вверх.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Сгибания рук с гантелями (бицепс)</h5>
+                            <p><strong>Техника:</strong> стоя или сидя, сгибать руку в локте, поднимая гантель к плечу. Локоть неподвижен.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Французский жим (трицепс)</h5>
+                            <p><strong>Техника:</strong> лёжа или сидя, согнуть руки за голову, разогнуть в локтях.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Для спины -->
+                    <div class="content-card full-width">
+                        <h3>🦵 Упражнения для спины</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Подтягивания</h5>
+                            <p><strong>Техника:</strong> повиснуть на перекладине, подтянуться до касания подбородком. Вариант: тяга верхнего блока в тренажёре.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Тяга гантели в наклоне</h5>
+                            <p><strong>Техника:</strong> упор одной рукой и ногой на скамью, гантель в другой руке, тянуть к поясу.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Гиперэкстензия</h5>
+                            <p><strong>Техника:</strong> лёжа на тренажёре лицом вниз, поднимать корпус вверх. Отлично для поясницы.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Для ног -->
+                    <div class="content-card full-width">
+                        <h3>🦵 Упражнения для ног</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Приседания</h5>
+                            <p><strong>Техника:</strong> ноги на ширине плеч, спина прямая, таз отводится назад, колени не выходят за носки.</p>
+                            <p><strong>Варианты:</strong> с весом тела, с гантелями, со штангой, плие (ноги широко).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Выпады</h5>
+                            <p><strong>Техника:</strong> шаг вперёд, опустить колено задней ноги почти до пола, вернуться в исходное.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Ягодичный мостик</h5>
+                            <p><strong>Техника:</strong> лёжа на спине, ноги согнуты, поднимать таз вверх, сжимая ягодицы.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Для пресса -->
+                    <div class="content-card full-width">
+                        <h3>🤸 Упражнения для пресса</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Скручивания</h5>
+                            <p><strong>Техника:</strong> лёжа на спине, ноги согнуты, поднимать плечи к тазу. Поясница прижата к полу.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Планка</h5>
+                            <p><strong>Техника:</strong> упор на предплечья и носки, тело прямая линия. Держать 20-60 сек.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Подъём ног</h5>
+                            <p><strong>Техника:</strong> лёжа на спине, поднимать прямые ноги до вертикали. Важно не прогибать поясницу.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Велосипед</h5>
+                            <p><strong>Техника:</strong> имитация езды на велосипеде лёжа на спине, локти тянутся к противоположному колену.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Частые ошибки -->
+                    <div class="content-card full-width">
+                        <h3>❌ Частые ошибки в фитнесе</h3>
+                        <ul>
+                            <li><strong>Пренебрежение разминкой</strong> — риск травм выше в 5 раз</li>
+                            <li><strong>Неправильная техника</strong> — лучше меньше вес, но правильно</li>
+                            <li><strong>Перетренированность</strong> — мышцы растут в отдых, не гонись за количеством</li>
+                            <li><strong>Неправильное дыхание</strong> — выдох на усилии, вдох на расслаблении</li>
+                            <li><strong>Отсутствие заминки</strong> — растяжка после тренировки ускоряет восстановление</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Программы (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="tactics">
+                <h2>📋 Тренировочные программы по фитнесу</h2>
+                
+                <div class="content-grid">
+                    <!-- Для начинающих -->
+                    <div class="content-card full-width">
+                        <h3>🌱 Программа для начинающих (3 раза в неделю)</h3>
+                        <p><strong>Цель:</strong> привыкнуть к нагрузкам, освоить технику.</p>
+                        
+                        <h4>Понедельник (всё тело, легкие веса):</h4>
+                        <ul>
+                            <li>Приседания — 3×12</li>
+                            <li>Отжимания (с колен) — 3×10</li>
+                            <li>Тяга гантели в наклоне — 3×12</li>
+                            <li>Планка — 3×20 сек</li>
+                        </ul>
+                        
+                        <h4>Среда (кардио + пресс):</h4>
+                        <ul>
+                            <li>Бег/велосипед — 20 мин</li>
+                            <li>Скручивания — 3×15</li>
+                            <li>Подъём ног — 3×12</li>
+                            <li>Планка — 3×20 сек</li>
+                        </ul>
+                        
+                        <h4>Пятница (всё тело, средние веса):</h4>
+                        <ul>
+                            <li>Выпады — 3×12</li>
+                            <li>Жим гантелей лёжа — 3×10</li>
+                            <li>Гиперэкстензия — 3×15</li>
+                            <li>Скручивания — 3×15</li>
+                        </ul>
+                        
+                        <p><strong>Прогрессия:</strong> увеличивай повторения или вес, когда стало легко.</p>
+                    </div>
+                    
+                    <!-- Сплит-программа -->
+                    <div class="content-card full-width">
+                        <h3>🔥 Сплит-программа (3-4 раза в неделю)</h3>
+                        <p><strong>Для продвинутых, кто хочет больше нагрузки.</strong></p>
+                        
+                        <div class="technique-block">
+                            <h5>Понедельник (грудь + трицепс):</h5>
+                            <ul>
+                                <li>Жим гантелей лёжа — 4×8-10</li>
+                                <li>Отжимания на брусьях — 3×8-12</li>
+                                <li>Разводка гантелей — 3×12</li>
+                                <li>Французский жим — 3×10</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Среда (спина + бицепс):</h5>
+                            <ul>
+                                <li>Подтягивания (или тяга блока) — 4×8-10</li>
+                                <li>Тяга гантели в наклоне — 3×10</li>
+                                <li>Сгибания рук с гантелями — 3×10-12</li>
+                                <li>Молотковые сгибания — 3×10</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Пятница (ноги + плечи):</h5>
+                            <ul>
+                                <li>Приседания со штангой — 4×8-10</li>
+                                <li>Выпады — 3×10 на каждую ногу</li>
+                                <li>Жим гантелей сидя — 3×10</li>
+                                <li>Разведение гантелей в стороны — 3×12</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Для похудения -->
+                    <div class="content-card full-width">
+                        <h3>🔥 Программа для похудения (3-5 раз в неделю)</h3>
+                        <div class="technique-block">
+                            <h5>1. Кардио (20-30 мин)</h5>
+                            <ul>
+                                <li>Бег, велосипед, эллипс</li>
+                                <li>Пульс 120-150</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>2. Круговая тренировка</h5>
+                            <ul>
+                                <li>Приседания — 15 раз</li>
+                                <li>Отжимания — 10-15 раз</li>
+                                <li>Выпады — 12 на каждую ногу</li>
+                                <li>Планка — 30 сек</li>
+                                <li>Берпи — 10 раз</li>
+                                <li>Скручивания — 15 раз</li>
+                                <li>Отдых между упражнениями — минимум, между кругами — 1-2 мин</li>
+                                <li>Круги: 3-5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>3. Заминка/стретчинг (5-10 мин)</h5>
+                            <ul>
+                                <li>Растяжка всех групп мышц</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Домашняя тренировка -->
+                    <div class="content-card full-width">
+                        <h3>🏠 Домашняя тренировка (без инвентаря)</h3>
+                        <ul>
+                            <li><strong>Приседания</strong> — 3×20</li>
+                            <li><strong>Выпады</strong> — 3×12 на каждую ногу</li>
+                            <li><strong>Отжимания</strong> — 3×10-15 (с колен, если тяжело)</li>
+                            <li><strong>Обратные отжимания от стула</strong> — 3×10</li>
+                            <li><strong>Планка</strong> — 3×30 сек</li>
+                            <li><strong>Берпи</strong> — 3×10</li>
+                            <li><strong>Скручивания</strong> — 3×15</li>
+                            <li><strong>Ягодичный мостик</strong> — 3×15</li>
+                        </ul>
+                        <p>Выполняй всё по кругу или как отдельные подходы.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Питание (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="programs">
+                <h2>🥗 Питание в фитнесе</h2>
+                
+                <div class="content-grid">
+                    <!-- Основы питания -->
+                    <div class="content-card full-width">
+                        <h3>Основы правильного питания</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Белки (протеины)</h5>
+                            <ul>
+                                <li>Источники: курица, индейка, рыба, яйца, творог, бобовые</li>
+                                <li>Норма: 1.5-2 г на кг веса</li>
+                                <li>Функция: строительство мышц</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Углеводы</h5>
+                            <ul>
+                                <li>Источники: гречка, рис, овсянка, макароны из твёрдых сортов, овощи, фрукты</li>
+                                <li>Норма: 4-6 г на кг веса (индивидуально)</li>
+                                <li>Функция: энергия для тренировок</li>
+                                <li>Предпочтение: сложным углеводам</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Жиры</h5>
+                            <ul>
+                                <li>Источники: орехи, авокадо, оливковое масло, жирная рыба</li>
+                                <li>Норма: 0.8-1 г на кг веса</li>
+                                <li>Функция: гормональный фон, здоровье суставов</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Вода</h5>
+                            <ul>
+                                <li>Норма: 1.5-2 л в день + 0.5 л во время тренировки</li>
+                                <li>Пить маленькими глотками в течение дня</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Для набора массы -->
+                    <div class="content-card full-width">
+                        <h3>🍗 Питание для набора мышечной массы</h3>
+                        <ul>
+                            <li><strong>Профицит калорий:</strong> есть на 10-15% больше, чем тратишь</li>
+                            <li><strong>Белок:</strong> 1.8-2 г на кг веса</li>
+                            <li><strong>Углеводы:</strong> до и после тренировки — обязательно</li>
+                            <li><strong>Частота:</strong> 5-6 приёмов пищи в день (каждые 3-4 часа)</li>
+                            <li><strong>Пример рациона:</strong> завтрак (овсянка + яйца), обед (гречка + курица), полдник (творог), ужин (рыба + овощи)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Для похудения -->
+                    <div class="content-card full-width">
+                        <h3>🥗 Питание для похудения (жиросжигания)</h3>
+                        <ul>
+                            <li><strong>Дефицит калорий:</strong> есть на 10-20% меньше, чем тратишь</li>
+                            <li><strong>Белок:</strong> 1.8-2 г на кг веса (сохраняет мышцы)</li>
+                            <li><strong>Меньше быстрых углеводов:</strong> сахар, сладости, белый хлеб</li>
+                            <li><strong>Больше овощей:</strong> клетчатка даёт насыщение</li>
+                            <li><strong>Дробное питание:</strong> 4-5 приёмов пищи маленькими порциями</li>
+                            <li><strong>Вода:</strong> обязательно 2 л в день</li>
+                            <li><strong>Пример рациона:</strong> завтрак (яйца + овощи), обед (гречка + курица + салат), ужин (творог или рыба + овощи)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Спортивное питание -->
+                    <div class="content-card full-width">
+                        <h3>💊 Спортивное питание (БАДы)</h3>
+                        <div class="technique-block">
+                            <h5>Протеин (сывороточный)</h5>
+                            <p>Быстрый белок, идеален после тренировки и утром.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Казеин</h5>
+                            <p>Медленный белок, принимают на ночь.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>BCAA</h5>
+                            <p>Аминокислоты для защиты мышц от разрушения.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Креатин</h5>
+                            <p>Для силы и выносливости (5 г в день).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Жиросжигатели</h5>
+                            <p>Только если ты уже на дефиците калорий и плато.</p>
+                        </div>
+                        
+                        <p><strong>⚠️ Важно:</strong> спортивное питание — это добавки, а не замена обычной еде!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тест -->
+            <div class="tab-content" id="test">
+                <h2>Тест: Проверь свои знания о фитнесе</h2>
+                <div class="test-container" id="testContainer">
+                    <!-- Сюда будут добавляться вопросы -->
+                </div>
+                <div class="test-result" id="testResult"></div>
+                <button class="btn btn--primary" id="submitTest">Проверить ответы</button>
+                <button class="btn btn--secondary" id="resetTest" style="margin-left: 10px;">Пройти заново</button>
+            </div>
+
+            <!-- Вкладка Разминка -->
+            <div class="tab-content" id="warmup">
+                <h2>💪 Активация тела перед тренировкой</h2>
+                <p class="warmup-intro">Чтобы тренировка была эффективной и безопасной, обязательно разминайся 10 минут перед нагрузкой.</p>
+                
+                <div class="warmup-table">
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Кардио</div>
+                        <div class="warmup-cell">Джампинг джекс или бег на месте</div>
+                        <div class="warmup-cell">2 мин</div>
+                        <div class="warmup-cell">Разогреть всё тело</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Суставы</div>
+                        <div class="warmup-cell">Круговые вращения шеей, плечами, тазом</div>
+                        <div class="warmup-cell">по 10 раз</div>
+                        <div class="warmup-cell">Подготовить суставы</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Активация</div>
+                        <div class="warmup-cell">Ягодичный мостик</div>
+                        <div class="warmup-cell">15 раз</div>
+                        <div class="warmup-cell">Включить ягодицы</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Кор</div>
+                        <div class="warmup-cell">Планка</div>
+                        <div class="warmup-cell">30 сек</div>
+                        <div class="warmup-cell">Разбудить пресс</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Динамика</div>
+                        <div class="warmup-cell">Выпады с подъёмом рук</div>
+                        <div class="warmup-cell">по 8 раз</div>
+                        <div class="warmup-cell">Растянуть грудные и ноги</div>
+                    </div>
+                </div>
+                
+                <div class="warmup-tip">
+                    <strong>💡 Совет:</strong> в фитнесе важно "включить" мышцы до работы — это улучшит результат и убережёт от травм!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                    <p class="footer__copy">© 2026 SportHub. Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="volleyball.html">Волейбол</a></li>
+                        <li><a href="football.html">Футбол</a></li>
+                        <li><a href="basketball.html">Баскетбол</a></li>
+                        <li><a href="athletics.html">Лёгкая атлетика</a></li>
+                        <li><a href="powerlifting.html">Пауэрлифтинг</a></li>
+                        <li><a href="fitness.html">Фитнес</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4>Проект выполнил</h4>
+                    <p>Тарощин Дмитрий<br>10 «А» класс</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+    <!-- Тест по фитнесу -->
+    <script>
+    const fitnessTest = {
+        questions: [
+            {
+                question: "Сколько раз в неделю рекомендуется тренироваться новичкам?",
+                options: ["1-2", "3-4", "5-6", "Каждый день"],
+                correct: 1
+            },
+            {
+                question: "Что такое 'повторение' в фитнесе?",
+                options: ["Один подход", "Одно выполнение упражнения", "Перерыв между подходами", "Вид упражнения"],
+                correct: 1
+            },
+            {
+                question: "Сколько подходов обычно делают для роста мышц?",
+                options: ["1-2", "3-4", "5-6", "7-8"],
+                correct: 1
+            },
+            {
+                question: "Что лучше есть после тренировки?",
+                options: ["Жиры", "Углеводы", "Белки", "Белки + углеводы"],
+                correct: 3
+            },
+            {
+                question: "Сколько воды рекомендуется пить в день?",
+                options: ["0.5-1 л", "1-1.5 л", "1.5-2 л", "2.5-3 л"],
+                correct: 2
+            },
+            {
+                question: "Что такое 'кардио'?",
+                options: ["Силовая тренировка", "Тренировка на выносливость", "Растяжка", "Тренировка с железом"],
+                correct: 1
+            },
+            {
+                question: "Как часто нужно менять программу тренировок?",
+                options: ["Каждую неделю", "Каждые 2-3 недели", "Каждые 4-6 недель", "Каждые полгода"],
+                correct: 2
+            },
+            {
+                question: "Что лучше для сжигания жира?",
+                options: ["Бег", "Силовые тренировки", "Интервальные тренировки", "Йога"],
+                correct: 2
+            },
+            {
+                question: "Сколько белка нужно в день на кг веса?",
+                options: ["0.5 г", "0.8-1 г", "1.2-1.5 г", "1.8-2 г"],
+                correct: 3
+            },
+            {
+                question: "Что такое 'заминка'?",
+                options: ["Разминка перед тренировкой", "Упражнения после тренировки", "Перерыв", "Основная часть"],
+                correct: 1
+            }
+        ]
+    };
+
+    function renderTest(testData) {
+        const container = document.getElementById('testContainer');
+        if (!container) return;
+        
+        let html = '';
+        testData.questions.forEach((q, index) => {
+            html += `
+                <div class="question-card" id="question-${index}">
+                    <div class="question-text">${index + 1}. ${q.question}</div>
+                    <ul class="options-list">
+            `;
+            
+            q.options.forEach((option, optIndex) => {
+                html += `
+                    <li class="option-item" data-question="${index}" data-option="${optIndex}" onclick="selectOption(${index}, ${optIndex})">
+                        ${option}
+                    </li>
+                `;
+            });
+            
+            html += `</ul></div>`;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    window.selectOption = function(questionIndex, optionIndex) {
+        const options = document.querySelectorAll(`#question-${questionIndex} .option-item`);
+        options.forEach(opt => opt.classList.remove('selected'));
+        options[optionIndex].classList.add('selected');
+    }
+
+    function checkTest() {
+        const questions = document.querySelectorAll('.question-card');
+        let correctCount = 0;
+        const testData = window.currentTest;
+        
+        questions.forEach((q, index) => {
+            const selected = q.querySelector('.option-item.selected');
+            const correctIndex = testData.questions[index].correct;
+            const options = q.querySelectorAll('.option-item');
+            
+            options.forEach((opt, optIndex) => {
+                opt.classList.add('disabled');
+                if (optIndex === correctIndex) {
+                    opt.classList.add('correct');
+                } else if (opt.classList.contains('selected') && optIndex !== correctIndex) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            if (selected && parseInt(selected.dataset.option) === correctIndex) {
+                correctCount++;
+            }
+        });
+        
+        const resultDiv = document.getElementById('testResult');
+        const percentage = Math.round((correctCount / testData.questions.length) * 100);
+        
+        let resultClass = '';
+        if (percentage >= 80) resultClass = 'good';
+        else if (percentage >= 50) resultClass = 'normal';
+        else resultClass = 'bad';
+        
+        resultDiv.className = `test-result ${resultClass}`;
+        resultDiv.innerHTML = `Вы ответили правильно на ${correctCount} из ${testData.questions.length} вопросов (${percentage}%)`;
+        
+        document.getElementById('submitTest').disabled = true;
+    }
+
+    function resetTest() {
+        const questions = document.querySelectorAll('.question-card');
+        questions.forEach(q => {
+            const options = q.querySelectorAll('.option-item');
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect', 'disabled');
+            });
+        });
+        
+        document.getElementById('testResult').innerHTML = '';
+        document.getElementById('testResult').className = 'test-result';
+        document.getElementById('submitTest').disabled = false;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('testContainer')) {
+            window.currentTest = fitnessTest;
+            renderTest(fitnessTest);
+            
+            document.getElementById('submitTest').addEventListener('click', checkTest);
+            document.getElementById('resetTest').addEventListener('click', resetTest);
+        }
+    });
+    </script>
+    
+    <script src="../js/sport-page.js"></script>
+</body>
+</html>

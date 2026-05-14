@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лёгкая атлетика - SportHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sport-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- Кнопка "Назад" в кружке -->
+                <a href="../index.html" class="back-circle" title="На главную">
+                    <span class="back-arrow">←</span>
+                </a>
+                
+                <div class="header__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li><a href="../index.html#sports" class="nav__link active">Виды спорта</a></li>
+                        <li><a href="../index.html#about" class="nav__link">О проекте</a></li>
+                        <li><a href="../index.html#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Кнопка переключения темы -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="sport-hero" style="background: linear-gradient(135deg, #54a0ff 0%, #2e86de 100%);">
+        <div class="container">
+            <h1 class="sport-hero__title">Лёгкая атлетика</h1>
+            <p class="sport-hero__subtitle">Королева спорта</p>
+        </div>
+    </section>
+
+    <section class="sport-content">
+        <div class="container">
+            <div class="sport-tabs">
+                <button class="tab-btn active" data-tab="theory">Теория и основы</button>
+                <button class="tab-btn" data-tab="technique">Техника</button>
+                <button class="tab-btn" data-tab="tactics">Виды</button>
+                <button class="tab-btn" data-tab="programs">Программы</button>
+                <button class="tab-btn" data-tab="test">📝 Тест</button>
+                <button class="tab-btn" data-tab="warmup">🔥 Разминка</button>
+            </div>
+
+            <!-- Вкладка Теория (РАСШИРЕННАЯ) -->
+            <div class="tab-content active" id="theory">
+                <h2>📚 Теория и основы лёгкой атлетики</h2>
+                
+                <div class="content-grid">
+                    <!-- История -->
+                    <div class="content-card full-width">
+                        <h3>📜 История лёгкой атлетики</h3>
+                        <p><strong>Древняя Греция</strong> — первые соревнования по бегу проводились на Олимпийских играх в 776 году до н.э.</p>
+                        <p><strong>1896 год</strong> — лёгкая атлетика стала одним из первых видов спорта на современных Олимпийских играх в Афинах.</p>
+                        <p><strong>1912 год</strong> — основана Международная ассоциация легкоатлетических федераций (IAAF, ныне World Athletics).</p>
+                        
+                        <h4>Легендарные спортсмены:</h4>
+                        <ul>
+                            <li><strong>Усэйн Болт (Ямайка)</strong> — 8-кратный олимпийский чемпион, рекордсмен мира на 100 м (9.58 сек) и 200 м (19.19 сек)</li>
+                            <li><strong>Карл Льюис (США)</strong> — 9-кратный олимпийский чемпион</li>
+                            <li><strong>Елена Исинбаева (Россия)</strong> — 2-кратная олимпийская чемпионка в прыжках с шестом</li>
+                            <li><strong>Пааво Нурми (Финляндия)</strong> — 9-кратный олимпийский чемпион в беге</li>
+                            <li><strong>Сергей Бубка (Украина)</strong> — 6-кратный чемпион мира в прыжках с шестом</li>
+                        </ul>
+                        
+                        <h4>Интересные факты:</h4>
+                        <ul>
+                            <li>Самая длинная дистанция в лёгкой атлетике — 100 км (не олимпийская)</li>
+                            <li>Самое старое мировое достижение — результат в толкании ядра (женщины, 1987 год)</li>
+                            <li>Марафонская дистанция 42 км 195 м была установлена на Олимпиаде 1908 года в Лондоне</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Дисциплины -->
+                    <div class="content-card full-width">
+                        <h3>🏃‍♂️ Дисциплины лёгкой атлетики</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Беговые дисциплины</h5>
+                            <ul>
+                                <li><strong>Спринт:</strong> 60 м, 100 м, 200 м, 400 м</li>
+                                <li><strong>Средние дистанции:</strong> 800 м, 1500 м</li>
+                                <li><strong>Длинные дистанции:</strong> 3000 м, 5000 м, 10000 м</li>
+                                <li><strong>Барьерный бег:</strong> 100 м (женщины), 110 м (мужчины), 400 м</li>
+                                <li><strong>Стипль-чез:</strong> 3000 м с препятствиями</li>
+                                <li><strong>Эстафета:</strong> 4×100 м, 4×400 м</li>
+                                <li><strong>Марафон:</strong> 42 195 м</li>
+                                <li><strong>Спортивная ходьба:</strong> 20 км, 50 км</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Прыжковые дисциплины</h5>
+                            <ul>
+                                <li><strong>Прыжки в длину</strong></li>
+                                <li><strong>Тройной прыжок</strong></li>
+                                <li><strong>Прыжки в высоту</strong></li>
+                                <li><strong>Прыжки с шестом</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Метательные дисциплины</h5>
+                            <ul>
+                                <li><strong>Толкание ядра</strong></li>
+                                <li><strong>Метание диска</strong></li>
+                                <li><strong>Метание копья</strong></li>
+                                <li><strong>Метание молота</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Многоборья</h5>
+                            <ul>
+                                <li><strong>Десятиборье (мужчины):</strong> 10 дисциплин за 2 дня</li>
+                                <li><strong>Семиборье (женщины):</strong> 7 дисциплин за 2 дня</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Правила -->
+                    <div class="content-card full-width">
+                        <h3>⚖️ Правила соревнований</h3>
+                        
+                        <h4>Беговые дисциплины:</h4>
+                        <ul>
+                            <li><strong>Фальстарт:</strong> второй фальстарт — дисквалификация</li>
+                            <li><strong>Финиш:</strong> побеждает та часть тела, которая первой пересекает линию</li>
+                            <li><strong>Дорожки:</strong> бег по своей дорожке до 400 м</li>
+                        </ul>
+                        
+                        <h4>Прыжки в длину и тройной:</h4>
+                        <ul>
+                            <li>Каждому спортсмену даётся 3 попытки в квалификации, затем 3 в финале</li>
+                            <li>Заступ за линию отталкивания — попытка не засчитывается</li>
+                            <li>Побеждает спортсмен с самой длинной попыткой</li>
+                        </ul>
+                        
+                        <h4>Прыжки в высоту:</h4>
+                        <ul>
+                            <li>Каждую высоту можно брать с 3 попыток</li>
+                            <li>Побеждает взявший наибольшую высоту</li>
+                        </ul>
+                        
+                        <h4>Метания:</h4>
+                        <ul>
+                            <li>Каждому даётся 3 попытки в квалификации, затем 3 в финале</li>
+                            <li>Заступ за линию — попытка не засчитывается</li>
+                            <li>Снаряд должен упасть в сектор</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Экипировка -->
+                    <div class="content-card">
+                        <h3>👕 Экипировка</h3>
+                        <ul>
+                            <li><strong>Беговые шиповки:</strong> для хорошего сцепления с дорожкой</li>
+                            <li><strong>Стартовые колодки:</strong> для низкого старта</li>
+                            <li><strong>Форма:</strong> майка, шорты (облегающие для уменьшения сопротивления)</li>
+                            <li><strong>Барьеры:</strong> разной высоты (мужские 106.7 см, женские 84 см)</li>
+                            <li><strong>Планка для прыжков:</strong> из пластика или металла</li>
+                            <li><strong>Снаряды:</strong> ядро (7.26 кг у мужчин, 4 кг у женщин), диск, копьё, молот</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Стадион -->
+                    <div class="content-card">
+                        <h3>🏟️ Легкоатлетический стадион</h3>
+                        <ul>
+                            <li>Беговая дорожка длиной <strong>400 м</strong></li>
+                            <li>8-9 дорожек шириной 1.22 м каждая</li>
+                            <li>Сектор для прыжков в длину и тройных</li>
+                            <li>Сектор для метаний</li>
+                            <li>Зона для прыжков в высоту и с шестом</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Техника (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="technique">
+                <h2>🎯 Техника в лёгкой атлетике</h2>
+                
+                <div class="content-grid">
+                    <!-- Бег на короткие дистанции -->
+                    <div class="content-card full-width">
+                        <h3>🏃‍♂️ Бег на короткие дистанции (спринт)</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Фаза 1: Низкий старт</h5>
+                            <ol>
+                                <li>Установка колодок: передняя на расстоянии 1.5 стопы от линии, задняя — на 1.5 стопы от передней</li>
+                                <li>По команде "На старт!" — встать в колодки, руки у линии, голова прямо</li>
+                                <li>По команде "Внимание!" — приподнять таз, вес на руки и переднюю ногу</li>
+                                <li>По выстрелу — резкое выпрямление ног, мах рукой вперёд</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Фаза 2: Стартовый разгон</h5>
+                            <p>Первые 30-40 метров. Корпус наклонён вперёд, бедро поднимается высоко, шаги короткие и частые.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Фаза 3: Бег по дистанции</h5>
+                            <p>Корпус выпрямляется, шаги становятся шире. Руки согнуты в локтях под 90°, движение вперёд-назад.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Фаза 4: Финиширование</h5>
+                            <p>За 5-10 метров до финиша — бросок грудью или поворот плеча вперёд для раннего касания ленточки.</p>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Раннее выпрямление корпуса</li>
+                            <li>❌ Слишком широкие шаги</li>
+                            <li>❌ Напряжённые плечи</li>
+                            <li>❌ Отсутствие работы рук</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Бег на длинные дистанции -->
+                    <div class="content-card full-width">
+                        <h3>🏃‍♂️ Бег на длинные дистанции</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника бега:</h5>
+                            <ol>
+                                <li>Высокий старт</li>
+                                <li>Постановка стопы с передней части или с пятки</li>
+                                <li>Корпус слегка наклонён вперёд</li>
+                                <li>Ритмичное дыхание (например, 3 шага — вдох, 3 шага — выдох)</li>
+                                <li>Экономичные движения</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Тактика бега:</h5>
+                            <ul>
+                                <li><strong>Равномерный бег:</strong> постоянная скорость по дистанции</li>
+                                <li><strong>Переменный:</strong> смена темпа</li>
+                                <li><strong>Финишный спурт:</strong> ускорение на последних метрах</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Прыжки в длину -->
+                    <div class="content-card full-width">
+                        <h3>📏 Прыжки в длину</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Фазы прыжка:</h5>
+                            <ol>
+                                <li><strong>Разбег (20-25 шагов):</strong> контроль попадания на брусок</li>
+                                <li><strong>Отталкивание:</strong> резкое выпрямление толчковой ноги</li>
+                                <li><strong>Полет:</strong> способом "согнув ноги", "прогнувшись" или "ножницы"</li>
+                                <li><strong>Приземление:</strong> группировка и мягкое падение</li>
+                            </ol>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Заступ за линию отталкивания</li>
+                            <li>❌ Медленный разбег</li>
+                            <li>❌ Неправильное отталкивание</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Прыжки в высоту -->
+                    <div class="content-card full-width">
+                        <h3>📏 Прыжки в высоту</h3>
+                        <p><strong>Способ "Фосбери-флоп":</strong> разбег по дуге, отталкивание дальней от планки ногой, прогиб над планкой спиной, приземление на спину.</p>
+                        
+                        <h4>Ключевые моменты:</h4>
+                        <ul>
+                            <li>✅ Разбег по дуге 8-10 шагов</li>
+                            <li>✅ Отталкивание под углом 30-40°</li>
+                            <li>✅ Прогиб над планкой</li>
+                            <li>✅ Приземление на спину</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Метание копья -->
+                    <div class="content-card full-width">
+                        <h3>📏 Метание копья</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника метания:</h5>
+                            <ol>
+                                <li>Разбег с копьём над плечом</li>
+                                <li>Скрестный шаг для отведения таза</li>
+                                <li>Финальное усилие: хлёсткое движение рукой</li>
+                                <li>Выпуск копья под углом 30-35°</li>
+                            </ol>
+                        </div>
+                        
+                        <h4>Важно:</h4>
+                        <ul>
+                            <li>⚠️ Копьё должно лететь остриём вперёд</li>
+                            <li>⚠️ Заступ за линию — попытка не засчитывается</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- СБУ -->
+                    <div class="content-card full-width">
+                        <h3>🏃‍♂️ Специальные беговые упражнения (СБУ)</h3>
+                        <ul>
+                            <li><strong>Бег с высоким подниманием бедра</strong> — для техники и мышц бедра</li>
+                            <li><strong>Бег с захлёстом голени</strong> — для квадрицепса</li>
+                            <li><strong>Семенящий бег</strong> — для частоты шага</li>
+                            <li><strong>Бег на прямых ногах</strong> — для мышц стопы</li>
+                            <li><strong>Многоскоки (олений бег)</strong> — для взрывной силы</li>
+                        </ul>
+                        <p><strong>💡 Совет:</strong> СБУ выполняются в начале основной части тренировки после разминки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Виды (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="tactics">
+                <h2>🏃‍♂️ Виды лёгкой атлетики</h2>
+                
+                <div class="content-grid">
+                    <!-- Спринт -->
+                    <div class="content-card full-width">
+                        <h3>Спринт</h3>
+                        <p><strong>Дистанции:</strong> 60 м, 100 м, 200 м, 400 м</p>
+                        <p><strong>Требования:</strong> взрывная сила, стартовая скорость, координация.</p>
+                        <p><strong>Мировые рекорды:</strong> 100 м — Усэйн Болт (9.58 сек), 200 м — Усэйн Болт (19.19 сек), 400 м — Вайде ван Никерк (43.03 сек).</p>
+                    </div>
+                    
+                    <!-- Средние и длинные дистанции -->
+                    <div class="content-card full-width">
+                        <h3>Средние и длинные дистанции</h3>
+                        <p><strong>Дистанции:</strong> 800 м, 1500 м, 3000 м, 5000 м, 10000 м</p>
+                        <p><strong>Требования:</strong> выносливость, тактическое мышление, умение распределять силы.</p>
+                        <p><strong>Мировые рекорды:</strong> 800 м — Давид Рудиша (1:40.91), 1500 м — Хишам Эль-Герруж (3:26.00).</p>
+                    </div>
+                    
+                    <!-- Барьерный бег -->
+                    <div class="content-card full-width">
+                        <h3>Барьерный бег</h3>
+                        <p><strong>Дистанции:</strong> 100 м с барьерами (женщины), 110 м с барьерами (мужчины), 400 м с барьерами.</p>
+                        <p><strong>Высота барьеров:</strong> мужчины — 106.7 см, женщины — 84 см.</p>
+                        <p><strong>Ключевые навыки:</strong> ритм, координация, атака барьера.</p>
+                    </div>
+                    
+                    <!-- Технические виды -->
+                    <div class="content-card full-width">
+                        <h3>Технические виды</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Прыжки в высоту</h5>
+                            <p>Способ "Фосбери-флоп" — современный стандарт. Мировой рекорд — 2.45 м (Хавьер Сотомайор).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Прыжки с шестом</h5>
+                            <p>Самый зрелищный вид. Мировой рекорд — 6.23 м (Арман Дюплантис).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Толкание ядра</h5>
+                            <p>Вес ядра: мужчины — 7.26 кг, женщины — 4 кг. Мировой рекорд — 23.37 м (Райан Краузер).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Метание диска</h5>
+                            <p>Вес диска: мужчины — 2 кг, женщины — 1 кг. Мировой рекорд — 74.08 м (Юрген Шульт).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Метание молота</h5>
+                            <p>Вес молота: мужчины — 7.26 кг, женщины — 4 кг. Мировой рекорд — 86.74 м (Юрий Седых).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Метание копья</h5>
+                            <p>Вес копья: мужчины — 800 г, женщины — 600 г. Мировой рекорд — 98.48 м (Ян Железны).</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Многоборья -->
+                    <div class="content-card full-width">
+                        <h3>Многоборья</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Десятиборье (мужчины)</h5>
+                            <p>Дисциплины (2 дня):</p>
+                            <ul>
+                                <li>День 1: 100 м, прыжки в длину, толкание ядра, прыжки в высоту, 400 м</li>
+                                <li>День 2: 110 м с барьерами, метание диска, прыжки с шестом, метание копья, 1500 м</li>
+                            </ul>
+                            <p>Мировой рекорд — 9126 очков (Кевин Майер).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Семиборье (женщины)</h5>
+                            <p>Дисциплины (2 дня):</p>
+                            <ul>
+                                <li>День 1: 100 м с барьерами, прыжки в высоту, толкание ядра, 200 м</li>
+                                <li>День 2: прыжки в длину, метание копья, 800 м</li>
+                            </ul>
+                            <p>Мировой рекорд — 7291 очков (Джеки Джойнер-Керси).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Программы (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="programs">
+                <h2>📋 Тренировочные программы по лёгкой атлетике</h2>
+                
+                <div class="content-grid">
+                    <!-- Для начинающих бегунов -->
+                    <div class="content-card full-width">
+                        <h3>🌱 Программа для начинающих бегунов (1-3 месяца)</h3>
+                        <p><strong>Цель:</strong> адаптироваться к нагрузкам, улучшить выносливость.</p>
+                        
+                        <h4>Разминка (10-15 мин):</h4>
+                        <ul>
+                            <li>Лёгкий бег</li>
+                            <li>Вращение суставов</li>
+                            <li>СБУ (2-3 упражнения)</li>
+                        </ul>
+                        
+                        <h4>Основная часть (30-40 мин):</h4>
+                        <ul>
+                            <li><strong>Интервальный бег:</strong> 1 мин бег / 2 мин ходьба — 8-10 раз</li>
+                            <li><strong>Постепенное увеличение времени</strong> непрерывного бега</li>
+                            <li><strong>Контроль пульса:</strong> 130-150 ударов/мин</li>
+                        </ul>
+                        
+                        <h4>Заминка (5-10 мин):</h4>
+                        <ul>
+                            <li>Ходьба до пульса 100</li>
+                            <li>Растяжка</li>
+                        </ul>
+                        
+                        <p><strong>Частота:</strong> 3 раза в неделю</p>
+                    </div>
+                    
+                    <!-- Спринтерская подготовка -->
+                    <div class="content-card full-width">
+                        <h3>⚡ Спринтерская подготовка</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Упражнения для спринтеров:</h5>
+                            <ul>
+                                <li>Старты из различных положений (лёжа, сидя, стоя спиной) — 5×10 м</li>
+                                <li>Ускорения 30-60 м — 6-8 раз</li>
+                                <li>Бег под уклон — для скорости</li>
+                                <li>Специальные беговые упражнения</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Прыжковые упражнения:</h5>
+                            <ul>
+                                <li>Выпрыгивания из приседа — 3×12</li>
+                                <li>Прыжки на скакалке — 3×1 мин</li>
+                                <li>Многоскоки — 5×30 м</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Общая физическая подготовка -->
+                    <div class="content-card full-width">
+                        <h3>💪 Общая физическая подготовка (ОФП)</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Силовая подготовка:</h5>
+                            <ul>
+                                <li>Приседания — 3×20</li>
+                                <li>Выпады — 3×12 на каждую ногу</li>
+                                <li>Отжимания — 3×15</li>
+                                <li>Планка — 3×30 сек</li>
+                                <li>Подтягивания — 3×5-10</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Прыжковая подготовка:</h5>
+                            <ul>
+                                <li>Прыжки со скакалкой</li>
+                                <li>Прыжки на тумбу</li>
+                                <li>Выпрыгивания из приседа</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Кроссовая подготовка:</h5>
+                            <ul>
+                                <li>Кросс 3-5 км — 2 раза в неделю</li>
+                                <li>Фартлек — 30-40 мин</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Тесты и нормативы -->
+                    <div class="content-card">
+                        <h3>📊 Тесты и нормативы</h3>
+                        <ul>
+                            <li><strong>Бег 30 м:</strong> менее 4.5 сек — отлично</li>
+                            <li><strong>Бег 100 м:</strong> менее 13.5 сек — отлично</li>
+                            <li><strong>Челночный бег 5×10 м:</strong> менее 12 сек</li>
+                            <li><strong>Бег 1000 м:</strong> менее 3.5 мин — отлично</li>
+                            <li><strong>Прыжок в длину с места:</strong> более 220 см (муж), 180 см (жен)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Питание -->
+                    <div class="content-card">
+                        <h3>🥗 Питание легкоатлета</h3>
+                        <ul>
+                            <li><strong>До тренировки:</strong> сложные углеводы за 1.5-2 часа</li>
+                            <li><strong>После тренировки:</strong> белки + углеводы</li>
+                            <li><strong>Питьевой режим:</strong> 1.5-2 л воды в день</li>
+                            <li><strong>Рекомендуемые продукты:</strong> курица, рыба, гречка, рис, овощи, фрукты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тест -->
+            <div class="tab-content" id="test">
+                <h2>Тест: Проверь свои знания о лёгкой атлетике</h2>
+                <div class="test-container" id="testContainer">
+                    <!-- Сюда будут добавляться вопросы -->
+                </div>
+                <div class="test-result" id="testResult"></div>
+                <button class="btn btn--primary" id="submitTest">Проверить ответы</button>
+                <button class="btn btn--secondary" id="resetTest" style="margin-left: 10px;">Пройти заново</button>
+            </div>
+
+            <!-- Вкладка Разминка -->
+            <div class="tab-content" id="warmup">
+                <h2>🏃‍♂️ Разминка перед бегом</h2>
+                <p class="warmup-intro">Чтобы избежать травм и показать лучший результат, обязательно разминайся 15 минут перед стартом.</p>
+                
+                <div class="warmup-table">
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Кардио</div>
+                        <div class="warmup-cell">Лёгкий бег + семенящий бег</div>
+                        <div class="warmup-cell">4 мин</div>
+                        <div class="warmup-cell">Мягкий вход в тренировку</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">СБУ</div>
+                        <div class="warmup-cell">Бег с высоким подниманием бедра</div>
+                        <div class="warmup-cell">30 м х 3</div>
+                        <div class="warmup-cell">Техника бега</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">СБУ</div>
+                        <div class="warmup-cell">Бег с захлёстом голени</div>
+                        <div class="warmup-cell">30 м х 3</div>
+                        <div class="warmup-cell">Растянуть квадрицепс</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Прыжки</div>
+                        <div class="warmup-cell">Многоскоки (олений бег)</div>
+                        <div class="warmup-cell">20 м х 3</div>
+                        <div class="warmup-cell">Взрывная сила</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Спец. упр.</div>
+                        <div class="warmup-cell">Ускорения с низкого старта</div>
+                        <div class="warmup-cell">20 м х 3</div>
+                        <div class="warmup-cell">Настроить старт</div>
+                    </div>
+                </div>
+                
+                <div class="warmup-tip">
+                    <strong>💡 Совет:</strong> легкоатлетам нельзя пропускать СБУ — это база скорости и техники!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                    <p class="footer__copy">© 2026 SportHub. Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="volleyball.html">Волейбол</a></li>
+                        <li><a href="football.html">Футбол</a></li>
+                        <li><a href="basketball.html">Баскетбол</a></li>
+                        <li><a href="athletics.html">Лёгкая атлетика</a></li>
+                        <li><a href="powerlifting.html">Пауэрлифтинг</a></li>
+                        <li><a href="fitness.html">Фитнес</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4>Проект выполнил</h4>
+                    <p>Тарощин Дмитрий<br>10 «А» класс</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+    <!-- Тест по лёгкой атлетике -->
+    <script>
+    const athleticsTest = {
+        questions: [
+            {
+                question: "Какая дистанция считается спринтерской?",
+                options: ["800 м", "1500 м", "100 м", "3000 м"],
+                correct: 2
+            },
+            {
+                question: "Сколько метров в классическом беговом круге на стадионе?",
+                options: ["300 м", "400 м", "500 м", "200 м"],
+                correct: 1
+            },
+            {
+                question: "Что такое 'фальстарт'?",
+                options: ["Поздний старт", "Преждевременный старт", "Неправильный бег", "Остановка"],
+                correct: 1
+            },
+            {
+                question: "Какой снаряд не метают в легкой атлетике?",
+                options: ["Копье", "Диск", "Молот", "Мяч для гандбола"],
+                correct: 3
+            },
+            {
+                question: "Сколько попыток в прыжках в длину?",
+                options: ["3", "4", "5", "6"],
+                correct: 3
+            },
+            {
+                question: "Какой высоты барьеры в мужском барьерном беге 110 м?",
+                options: ["100 см", "106.7 см", "110 см", "120 см"],
+                correct: 1
+            },
+            {
+                question: "Что такое 'стипль-чез'?",
+                options: ["Бег с препятствиями", "Марафон", "Эстафета", "Спринт"],
+                correct: 0
+            },
+            {
+                question: "Сколько дисциплин в мужском десятиборье?",
+                options: ["7", "8", "9", "10"],
+                correct: 3
+            },
+            {
+                question: "Какой вес ядра у мужчин?",
+                options: ["5 кг", "6 кг", "7.26 кг", "8 кг"],
+                correct: 2
+            },
+            {
+                question: "Какая дистанция марафона?",
+                options: ["40 км", "42.195 км", "45 км", "50 км"],
+                correct: 1
+            }
+        ]
+    };
+
+    function renderTest(testData) {
+        const container = document.getElementById('testContainer');
+        if (!container) return;
+        
+        let html = '';
+        testData.questions.forEach((q, index) => {
+            html += `
+                <div class="question-card" id="question-${index}">
+                    <div class="question-text">${index + 1}. ${q.question}</div>
+                    <ul class="options-list">
+            `;
+            
+            q.options.forEach((option, optIndex) => {
+                html += `
+                    <li class="option-item" data-question="${index}" data-option="${optIndex}" onclick="selectOption(${index}, ${optIndex})">
+                        ${option}
+                    </li>
+                `;
+            });
+            
+            html += `</ul></div>`;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    window.selectOption = function(questionIndex, optionIndex) {
+        const options = document.querySelectorAll(`#question-${questionIndex} .option-item`);
+        options.forEach(opt => opt.classList.remove('selected'));
+        options[optionIndex].classList.add('selected');
+    }
+
+    function checkTest() {
+        const questions = document.querySelectorAll('.question-card');
+        let correctCount = 0;
+        const testData = window.currentTest;
+        
+        questions.forEach((q, index) => {
+            const selected = q.querySelector('.option-item.selected');
+            const correctIndex = testData.questions[index].correct;
+            const options = q.querySelectorAll('.option-item');
+            
+            options.forEach((opt, optIndex) => {
+                opt.classList.add('disabled');
+                if (optIndex === correctIndex) {
+                    opt.classList.add('correct');
+                } else if (opt.classList.contains('selected') && optIndex !== correctIndex) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            if (selected && parseInt(selected.dataset.option) === correctIndex) {
+                correctCount++;
+            }
+        });
+        
+        const resultDiv = document.getElementById('testResult');
+        const percentage = Math.round((correctCount / testData.questions.length) * 100);
+        
+        let resultClass = '';
+        if (percentage >= 80) resultClass = 'good';
+        else if (percentage >= 50) resultClass = 'normal';
+        else resultClass = 'bad';
+        
+        resultDiv.className = `test-result ${resultClass}`;
+        resultDiv.innerHTML = `Вы ответили правильно на ${correctCount} из ${testData.questions.length} вопросов (${percentage}%)`;
+        
+        document.getElementById('submitTest').disabled = true;
+    }
+
+    function resetTest() {
+        const questions = document.querySelectorAll('.question-card');
+        questions.forEach(q => {
+            const options = q.querySelectorAll('.option-item');
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect', 'disabled');
+            });
+        });
+        
+        document.getElementById('testResult').innerHTML = '';
+        document.getElementById('testResult').className = 'test-result';
+        document.getElementById('submitTest').disabled = false;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('testContainer')) {
+            window.currentTest = athleticsTest;
+            renderTest(athleticsTest);
+            
+            document.getElementById('submitTest').addEventListener('click', checkTest);
+            document.getElementById('resetTest').addEventListener('click', resetTest);
+        }
+    });
+    </script>
+    
+    <script src="../js/sport-page.js"></script>
+</body>
+</html>

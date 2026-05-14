@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбол - SportHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sport-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- Кнопка "Назад" в кружке -->
+                <a href="../index.html" class="back-circle" title="На главную">
+                    <span class="back-arrow">←</span>
+                </a>
+                
+                <div class="header__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li><a href="../index.html#sports" class="nav__link active">Виды спорта</a></li>
+                        <li><a href="../index.html#about" class="nav__link">О проекте</a></li>
+                        <li><a href="../index.html#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Кнопка переключения темы -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="sport-hero" style="background: linear-gradient(135deg, #4ecdc4 0%, #45b7aa 100%);">
+        <div class="container">
+            <h1 class="sport-hero__title">Футбол</h1>
+            <p class="sport-hero__subtitle">Игра миллионов</p>
+        </div>
+    </section>
+
+    <section class="sport-content">
+        <div class="container">
+            <div class="sport-tabs">
+                <button class="tab-btn active" data-tab="theory">Теория и основы</button>
+                <button class="tab-btn" data-tab="technique">Техника</button>
+                <button class="tab-btn" data-tab="tactics">Тактика</button>
+                <button class="tab-btn" data-tab="programs">Программы</button>
+                <button class="tab-btn" data-tab="test">📝 Тест</button>
+                <button class="tab-btn" data-tab="warmup">🔥 Разминка</button>
+            </div>
+
+            <!-- Вкладка Теория (РАСШИРЕННАЯ) -->
+            <div class="tab-content active" id="theory">
+                <h2>📚 Теория и основы футбола</h2>
+                
+                <div class="content-grid">
+                    <!-- История футбола -->
+                    <div class="content-card full-width">
+                        <h3>📜 История футбола</h3>
+                        <p><strong>1863 год</strong> — в Англии была основана Футбольная ассоциация (FA), которая создала первые единые правила игры. Именно этот год считается годом рождения современного футбола.</p>
+                        <p><strong>1904 год</strong> — основана Международная федерация футбола (ФИФА).</p>
+                        <p><strong>1930 год</strong> — первый чемпионат мира по футболу прошёл в Уругвае.</p>
+                        <p><strong>1992 год</strong> — создана Лига чемпионов УЕФА в новом формате.</p>
+                        
+                        <h4>Легендарные игроки:</h4>
+                        <ul>
+                            <li><strong>Пеле (Бразилия)</strong> — трёхкратный чемпион мира, признан лучшим футболистом XX века</li>
+                            <li><strong>Диего Марадона (Аргентина)</strong> — гениальный дриблёр, чемпион мира 1986 года</li>
+                            <li><strong>Лионель Месси (Аргентина)</strong> — 8-кратный обладатель "Золотого мяча", чемпион мира 2022</li>
+                            <li><strong>Криштиану Роналду (Португалия)</strong> — 5-кратный обладатель "Золотого мяча", лучший бомбардир в истории</li>
+                            <li><strong>Лев Яшин (СССР)</strong> — единственный вратарь, получивший "Золотой мяч"</li>
+                        </ul>
+                        
+                        <h4>Интересные факты:</h4>
+                        <ul>
+                            <li>Самый быстрый гол в истории забит за 2.8 секунды (Абдул Вахид, Алжир)</li>
+                            <li>Самый дорогой трансфер — 222 млн евро (Неймар, 2017)</li>
+                            <li>Рекорд посещаемости матча — 199 854 зрителя (Уругвай — Бразилия, 1950)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Правила игры -->
+                    <div class="content-card full-width">
+                        <h3>⚖️ Правила игры</h3>
+                        
+                        <h4>Поле и ворота:</h4>
+                        <ul>
+                            <li><strong>Размер поля:</strong> длина 90-120 м, ширина 45-90 м</li>
+                            <li><strong>Ворота:</strong> высота 2.44 м, ширина 7.32 м</li>
+                            <li><strong>Штрафная площадь:</strong> 16.5 м от ворот</li>
+                            <li><strong>Пенальти:</strong> 11 метров от ворот</li>
+                        </ul>
+                        
+                        <h4>Состав команды:</h4>
+                        <ul>
+                            <li>На поле одновременно <strong>11 игроков</strong> (включая вратаря)</li>
+                            <li>В заявке на матч может быть до <strong>23 игроков</strong></li>
+                            <li><strong>Замены:</strong> 5 замен за матч (3 в основное время, +2 в овертайме)</li>
+                        </ul>
+                        
+                        <h4>Время игры:</h4>
+                        <ul>
+                            <li>Матч состоит из <strong>2 таймов по 45 минут</strong></li>
+                            <li>Перерыв между таймами — <strong>15 минут</strong></li>
+                            <li>Время добавляется главным судьёй (компенсированное)</li>
+                            <li>В плей-офф при ничьей — <strong>2 овертайма по 15 минут</strong>, затем пенальти</li>
+                        </ul>
+                        
+                        <h4>Основные нарушения:</h4>
+                        <ul>
+                            <li><strong>Жёлтая карточка</strong> — предупреждение (2 жёлтые = красная)</li>
+                            <li><strong>Красная карточка</strong> — удаление с поля</li>
+                            <li><strong>Пенальти</strong> — назначается за фол в штрафной</li>
+                            <li><strong>Штрафной удар</strong> — за фол за пределами штрафной</li>
+                            <li><strong>Вне игры (офсайд)</strong> — игрок ближе к воротам, чем мяч и предпоследний защитник</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Экипировка -->
+                    <div class="content-card">
+                        <h3>👕 Экипировка</h3>
+                        <ul>
+                            <li><strong>Бутсы:</strong> с шипами для лучшего сцепления с газоном</li>
+                            <li><strong>Форма:</strong> майка, трусы, гетры (у вратаря другой цвет)</li>
+                            <li><strong>Щитки:</strong> обязательны для защиты голени</li>
+                            <li><strong>Мяч:</strong> окружность 68-70 см, вес 410-450 г</li>
+                            <li><strong>Вратарские перчатки:</strong> для защиты рук и лучшего лова</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Позиции игроков -->
+                    <div class="content-card">
+                        <h3>🔢 Позиции игроков</h3>
+                        <ul>
+                            <li><strong>Вратарь (1):</strong> защищает ворота</li>
+                            <li><strong>Центральные защитники (2):</strong> основа обороны</li>
+                            <li><strong>Крайние защитники (2):</strong> подключаются в атаку</li>
+                            <li><strong>Опорные полузащитники (1-2):</strong> связка между защитой и атакой</li>
+                            <li><strong>Атакующие полузащитники (2-3):</strong> создают моменты</li>
+                            <li><strong>Нападающие (1-3):</strong> забивают голы</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Судьи -->
+                    <div class="content-card">
+                        <h3>⚙️ Судейская бригада</h3>
+                        <ul>
+                            <li><strong>Главный судья:</strong> на поле, фиксирует нарушения</li>
+                            <li><strong>Два помощника судьи (лайнсмены):</strong> следят за офсайдами и аутами</li>
+                            <li><strong>Четвёртый судья:</strong> замены, время, дисциплина</li>
+                            <li><strong>VAR (видеопомощник):</strong> просмотр спорных моментов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Техника (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="technique">
+                <h2>🎯 Техника футбола</h2>
+                
+                <div class="content-grid">
+                    <!-- Удары по мячу -->
+                    <div class="content-card full-width">
+                        <h3>⚽ Удары по мячу</h3>
+                        
+                        <div class="technique-block">
+                            <h5>1. Удар внутренней стороной стопы (щёчкой)</h5>
+                            <p><strong>Применение:</strong> для коротких и средних передач, ударов на точность.</p>
+                            <p><strong>Техника:</strong> стопа развёрнута наружу, удар наносится в центр мяча. Обеспечивает максимальную точность.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>2. Удар подъёмом</h5>
+                            <p><strong>Применение:</strong> для сильных ударов по воротам, дальних передач.</p>
+                            <p><strong>Техника:</strong> носок оттянут, удар наносится подъёмом стопы. Мяч получает сильное вращение.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>3. Удар внешней стороной стопы</h5>
+                            <p><strong>Применение:</strong> для неожиданных передач, обводки, ударов со сложной траекторией.</p>
+                            <p><strong>Техника:</strong> стопа развёрнута внутрь, удар наносится внешней частью.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>4. Удар носком</h5>
+                            <p><strong>Применение:</strong> редкий, используется для неожиданных ударов вблизи ворот.</p>
+                            <p><strong>Недостаток:</strong> низкая точность.</p>
+                        </div>
+                        
+                        <h4>Частые ошибки при ударах:</h4>
+                        <ul>
+                            <li>❌ Неправильная постановка опорной ноги</li>
+                            <li>❌ Откидывание корпуса назад (мяч летит вверх)</li>
+                            <li>❌ Наклон корпуса вперёд (мяч летит в землю)</li>
+                            <li>❌ Слабый замах</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Ведение мяча (дриблинг) -->
+                    <div class="content-card full-width">
+                        <h3>🏃‍♂️ Ведение мяча (дриблинг)</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника дриблинга:</h5>
+                            <ol>
+                                <li>Мяч ведётся внешней или внутренней частью подъёма</li>
+                                <li>Касания должны быть частыми и лёгкими</li>
+                                <li>Голова поднята для контроля поля</li>
+                                <li>Корпус слегка наклонён вперёд</li>
+                                <li>Руки работают для баланса</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Основные виды дриблинга:</h5>
+                            <ul>
+                                <li><strong>Прямой:</strong> бег с мячом без изменения направления</li>
+                                <li><strong>Обводка:</strong> смена направления движения</li>
+                                <li><strong>Скоростной:</strong> длинное ведение с ускорением</li>
+                                <li><strong>С укрыванием мяча:</strong> корпус между соперником и мячом</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Слишком сильные касания (потеря контроля)</li>
+                            <li>❌ Взгляд на мяч (не видишь поле)</li>
+                            <li>❌ Прямые ноги (потеря баланса)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Остановка мяча -->
+                    <div class="content-card full-width">
+                        <h3>🛑 Остановка мяча (приём)</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Способы остановки мяча:</h5>
+                            <ul>
+                                <li><strong>Подошвой:</strong> самый простой способ, мяч прижимается к земле</li>
+                                <li><strong>Внутренней стороной стопы:</strong> для гашения скорости катящегося мяча</li>
+                                <li><strong>Бедром:</strong> для высоких мячей</li>
+                                <li><strong>Грудью:</strong> для гашения скорости высокого мяча</li>
+                                <li><strong>Головой:</strong> для высоких мячей (с амортизацией)</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Советы:</h4>
+                        <ul>
+                            <li>💡 В момент приёма расслабь принимающую часть тела для амортизации</li>
+                            <li>💡 При приёме грудью — отклони корпус назад</li>
+                            <li>💡 Всегда встречай мяч, а не жди его</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Отбор мяча -->
+                    <div class="content-card full-width">
+                        <h3>🛡️ Отбор мяча</h3>
+                        
+                        <div class="technique-block">
+                            <h5>1. Выбивание</h5>
+                            <p>Выбивание мяча ногой — самый простой способ отбора. Важно попасть по мячу, а не по ноге соперника.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>2. Перехват</h5>
+                            <p>Чтение игры и предугадывание передачи. Нужно занять правильную позицию и перекрыть линию паса.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>3. Отбор в подкате</h5>
+                            <p><strong>Важно:</strong> выполняется только мяч в ногах у соперника. Нога должна скользить по газону, не поднимаясь.</p>
+                            <p><strong>Ошибка:</strong> поднятая нога — фол и жёлтая карточка.</p>
+                        </div>
+                        
+                        <h4>Правила отбора:</h4>
+                        <ul>
+                            <li>✅ Играй только в мяч</li>
+                            <li>✅ Держи дистанцию</li>
+                            <li>✅ Не атакуй со спины</li>
+                            <li>✅ В штрафной будь осторожен</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Финты -->
+                    <div class="content-card">
+                        <h3>✨ Финты</h3>
+                        <ul>
+                            <li><strong>Ложный замах:</strong> имитация удара или передачи</li>
+                            <li><strong>Переступ:</strong> движение ногой над мячом</li>
+                            <li><strong>Эластико (резиночка):</strong> перевод мяча внешней стороной стопы</li>
+                            <li><strong>Зайчик:</strong> подкидывание мяча ногой</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Упражнения -->
+                    <div class="content-card">
+                        <h3>📋 Упражнения для отработки</h3>
+                        <ul>
+                            <li><strong>Удары:</strong> по воротам с разных дистанций</li>
+                            <li><strong>Дриблинг:</strong> обводка стоек, конусов</li>
+                            <li><strong>Передачи:</strong> в стену, в парах</li>
+                            <li><strong>Квадрат:</strong> отработка точного паса</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тактика (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="tactics">
+                <h2>♟️ Тактика футбола</h2>
+                
+                <div class="content-grid">
+                    <!-- Схема 4-4-2 -->
+                    <div class="content-card full-width">
+                        <h3>Схема 4-4-2</h3>
+                        <p><strong>Классическая сбалансированная схема.</strong></p>
+                        <ul>
+                            <li><strong>4 защитника + 4 полузащитника + 2 нападающих</strong></li>
+                            <li>Линия обороны: 2 центральных защитника + 2 крайних</li>
+                            <li>Полузащита: 2 центральных + 2 крайних</li>
+                        </ul>
+                        
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>✓ Сбалансированность атаки и защиты</li>
+                            <li>✓ Две линии обороны</li>
+                            <li>✓ Понятность для игроков</li>
+                        </ul>
+                        
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>✗ Уязвимость при быстрых атаках соперника</li>
+                            <li>✗ Требует выносливых крайних полузащитников</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Схема 4-3-3 -->
+                    <div class="content-card full-width">
+                        <h3>Схема 4-3-3</h3>
+                        <p><strong>Атакующая схема, популярная в современном футболе.</strong></p>
+                        <ul>
+                            <li><strong>4 защитника + 3 полузащитника + 3 нападающих</strong></li>
+                            <li>Три нападающих — центральный и два крайних</li>
+                            <li>Полузащита: опорник + два центральных</li>
+                        </ul>
+                        
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>✓ Постоянное давление на защиту соперника</li>
+                            <li>✓ Много вариантов для атаки</li>
+                            <li>✓ Быстрые переходы</li>
+                        </ul>
+                        
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>✗ Уязвимость в центре поля</li>
+                            <li>✗ Требует высокой физической готовности</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Схема 3-5-2 -->
+                    <div class="content-card">
+                        <h3>Схема 3-5-2</h3>
+                        <p><strong>Для контроля центра поля.</strong></p>
+                        <ul>
+                            <li>3 центральных защитника</li>
+                            <li>5 полузащитников (2 крайних)</li>
+                            <li>2 нападающих</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Схема 5-3-2 -->
+                    <div class="content-card">
+                        <h3>Схема 5-3-2</h3>
+                        <p><strong>Оборонительная схема.</strong></p>
+                        <ul>
+                            <li>5 защитников (2 крайних подключаются в атаку)</li>
+                            <li>3 полузащитника</li>
+                            <li>2 нападающих</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Тактические элементы -->
+                    <div class="content-card full-width">
+                        <h3>🎯 Тактические элементы</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Офсайдная ловушка</h5>
+                            <p>Защитники одновременно выходят вперёд, оставляя нападающего соперника в положении вне игры. Требует синхронности.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Прессинг</h5>
+                            <p>Активное давление на соперника на его половине поля. Бывает высокий, средний и низкий.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Контратака</h5>
+                            <p>Быстрый переход из обороны в атаку после отбора мяча. Ключевая роль — быстрые игроки.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Фланговые атаки</h5>
+                            <p>Использование крайних защитников и полузащитников для создания моментов с прострелами и навесами.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Игра в стенку</h5>
+                            <p>Комбинация между двумя игроками: один даёт пас, второй возвращает в касание.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Стандартные положения -->
+                    <div class="content-card full-width">
+                        <h3>📐 Стандартные положения</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Угловой удар (корнер)</h5>
+                            <p>Подача с угла поля. Важно иметь игроков, хорошо играющих головой.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Штрафной удар (фри-кик)</h5>
+                            <p>Прямой удар по воротам или навес в штрафную. Мастера штрафных — отдельный козырь команды.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Пенальти</h5>
+                            <p>Удар с 11 метров. Психологический поединок между бьющим и вратарём.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Психология -->
+                    <div class="content-card">
+                        <h3>🧠 Психология в футболе</h3>
+                        <ul>
+                            <li><strong>Концентрация:</strong> важна все 90+ минут</li>
+                            <li><strong>Командный дух:</strong> поддержка друг друга</li>
+                            <li><strong>Спортивная злость:</strong> желание победить</li>
+                            <li><strong>Управление эмоциями:</strong> после ошибок и провокаций</li>
+                            <li><strong>Капитан:</strong> лидер на поле</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Программы (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="programs">
+                <h2>📋 Тренировочные программы по футболу</h2>
+                
+                <div class="content-grid">
+                    <!-- Для начинающих -->
+                    <div class="content-card full-width">
+                        <h3>🌱 Программа для начинающих (1-3 месяца)</h3>
+                        <p><strong>Цель:</strong> освоить базовые элементы, поставить технику.</p>
+                        
+                        <h4>Разминка (10-15 мин):</h4>
+                        <ul>
+                            <li>Лёгкий бег, прыжки</li>
+                            <li>Вращение суставов</li>
+                            <li>Специальные беговые упражнения</li>
+                        </ul>
+                        
+                        <h4>Основная часть (40-50 мин):</h4>
+                        <ul>
+                            <li><strong>Удары по неподвижному мячу:</strong> 10 мин</li>
+                            <li><strong>Ведение мяча (обводка фишек):</strong> 10 мин</li>
+                            <li><strong>Остановка катящегося мяча:</strong> 10 мин</li>
+                            <li><strong>Передачи в парах:</strong> 10 мин</li>
+                            <li><strong>Квадрат 4×1:</strong> 10 мин</li>
+                        </ul>
+                        
+                        <h4>Заминка (5-10 мин):</h4>
+                        <ul>
+                            <li>Растяжка, упражнения на гибкость</li>
+                        </ul>
+                        
+                        <p><strong>Частота:</strong> 2-3 раза в неделю</p>
+                    </div>
+                    
+                    <!-- Для любителей -->
+                    <div class="content-card full-width">
+                        <h3>⚡ Программа для любителей (3-12 месяцев)</h3>
+                        <p><strong>Цель:</strong> закрепить технику, развить игровое мышление.</p>
+                        
+                        <h4>Разминка (15 мин):</h4>
+                        <ul>
+                            <li>Бег с ускорениями</li>
+                            <li>Прыжковые упражнения</li>
+                            <li>Имитация ударов</li>
+                        </ul>
+                        
+                        <h4>Основная часть (50-60 мин):</h4>
+                        <ul>
+                            <li><strong>Удары с лёта и полутрафа:</strong> 10 мин</li>
+                            <li><strong>Обводка соперника (в парах):</strong> 10 мин</li>
+                            <li><strong>Отработка финтов:</strong> 10 мин</li>
+                            <li><strong>Тактические занятия:</strong> 15 мин</li>
+                            <li><strong>Двусторонняя игра:</strong> 15 мин</li>
+                        </ul>
+                        
+                        <h4>Заминка (5-10 мин):</h4>
+                        <ul>
+                            <li>Упражнения на восстановление, растяжка</li>
+                        </ul>
+                        
+                        <p><strong>Частота:</strong> 3-4 раза в неделю</p>
+                    </div>
+                    
+                    <!-- Физическая подготовка -->
+                    <div class="content-card full-width">
+                        <h3>💪 Физическая подготовка футболиста</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Скоростные упражнения</h5>
+                            <ul>
+                                <li>Челночный бег 5×10 м — 3 подхода</li>
+                                <li>Спринты на 20-30 м — 6-8 раз</li>
+                                <li>Ускорения из разных положений — 5×10 м</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Выносливость</h5>
+                            <ul>
+                                <li>Кросс 3-5 км — 2 раза в неделю</li>
+                                <li>Интервальный бег (1 мин бег / 30 сек ходьба) — 15-20 мин</li>
+                                <li>Фартлек — бег с переменной скоростью</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Силовая подготовка</h5>
+                            <ul>
+                                <li>Приседания — 3×15</li>
+                                <li>Выпады — 3×12 на каждую ногу</li>
+                                <li>Отжимания — 3×15</li>
+                                <li>Планка — 3×30 сек</li>
+                                <li>Прыжковые упражнения</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Координация</h5>
+                            <ul>
+                                <li>Упражнения с координационной лестницей</li>
+                                <li>Жонглирование мячом</li>
+                                <li>Упражнения на равновесие</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Тесты и нормативы -->
+                    <div class="content-card">
+                        <h3>📊 Тесты и нормативы</h3>
+                        <ul>
+                            <li><strong>Бег 30 м:</strong> менее 4.5 сек — отлично</li>
+                            <li><strong>Челночный бег 5×10 м:</strong> менее 12 сек</li>
+                            <li><strong>Бег 1000 м:</strong> менее 3.5 мин — отлично</li>
+                            <li><strong>Жонглирование мячом:</strong> более 50 раз</li>
+                            <li><strong>Удары в квадрат 2×2 м с 15 м:</strong> 7 из 10</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Питание -->
+                    <div class="content-card">
+                        <h3>🥗 Питание футболиста</h3>
+                        <ul>
+                            <li><strong>До матча:</strong> сложные углеводы за 2 часа</li>
+                            <li><strong>После матча:</strong> белки + углеводы</li>
+                            <li><strong>Питьевой режим:</strong> 1.5-2 л воды в день</li>
+                            <li><strong>Рекомендуемые продукты:</strong> курица, рыба, макароны, овощи, фрукты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тест -->
+            <div class="tab-content" id="test">
+                <h2>Тест: Проверь свои знания о футболе</h2>
+                <div class="test-container" id="testContainer">
+                    <!-- Сюда будут добавляться вопросы -->
+                </div>
+                <div class="test-result" id="testResult"></div>
+                <button class="btn btn--primary" id="submitTest">Проверить ответы</button>
+                <button class="btn btn--secondary" id="resetTest" style="margin-left: 10px;">Пройти заново</button>
+            </div>
+
+            <!-- Вкладка Разминка -->
+            <div class="tab-content" id="warmup">
+                <h2>⚡ Разминка перед футболом</h2>
+                <p class="warmup-intro">Чтобы избежать травм и быть готовым к игре, обязательно разминайся 12-15 минут перед матчем или тренировкой.</p>
+                
+                <div class="warmup-table">
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Кардио</div>
+                        <div class="warmup-cell">Лёгкий бег + приставные шаги</div>
+                        <div class="warmup-cell">3 мин</div>
+                        <div class="warmup-cell">Разогреть мышцы ног</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Суставы</div>
+                        <div class="warmup-cell">Вращение тазом, коленями, стопами</div>
+                        <div class="warmup-cell">по 15 раз</div>
+                        <div class="warmup-cell">Подготовить связки</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Динамика</div>
+                        <div class="warmup-cell">Махи ногами вперёд-назад</div>
+                        <div class="warmup-cell">по 12 раз</div>
+                        <div class="warmup-cell">Растянуть заднюю поверхность</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Спец. упр.</div>
+                        <div class="warmup-cell">Имитация удара по мячу без мяча</div>
+                        <div class="warmup-cell">по 10 раз</div>
+                        <div class="warmup-cell">Настроить технику</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Ускорения</div>
+                        <div class="warmup-cell">Короткие рывки на 10-15 метров</div>
+                        <div class="warmup-cell">3-4 раза</div>
+                        <div class="warmup-cell">Активировать взрывную силу</div>
+                    </div>
+                </div>
+                
+                <div class="warmup-tip">
+                    <strong>💡 Совет:</strong> никогда не тяни холодные мышцы — сначала разогрейся бегом!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                    <p class="footer__copy">© 2026 SportHub. Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="volleyball.html">Волейбол</a></li>
+                        <li><a href="football.html">Футбол</a></li>
+                        <li><a href="basketball.html">Баскетбол</a></li>
+                        <li><a href="athletics.html">Лёгкая атлетика</a></li>
+                        <li><a href="powerlifting.html">Пауэрлифтинг</a></li>
+                        <li><a href="fitness.html">Фитнес</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4>Проект выполнил</h4>
+                    <p>Тарощин Дмитрий<br>10 «А» класс</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+    <!-- Тест по футболу -->
+    <script>
+    const footballTest = {
+        questions: [
+            {
+                question: "Сколько игроков в футбольной команде на поле?",
+                options: ["9", "10", "11", "12"],
+                correct: 2
+            },
+            {
+                question: "Сколько длится футбольный матч?",
+                options: ["80 мин", "90 мин", "100 мин", "120 мин"],
+                correct: 1
+            },
+            {
+                question: "В каком году был основан современный футбол?",
+                options: ["1850", "1863", "1875", "1888"],
+                correct: 1
+            },
+            {
+                question: "Какого размера футбольные ворота?",
+                options: ["7.32 x 2.44 м", "8 x 2.5 м", "6 x 2 м", "7 x 2.2 м"],
+                correct: 0
+            },
+            {
+                question: "Что означает 'офсайд'?",
+                options: ["Положение вне игры", "Удар от ворот", "Штрафной удар", "Вбрасывание мяча"],
+                correct: 0
+            },
+            {
+                question: "Сколько замен разрешено в официальных матчах?",
+                options: ["3", "4", "5", "6"],
+                correct: 2
+            },
+            {
+                question: "Какой штраф за фол последней надежды?",
+                options: ["Желтая карточка", "Красная карточка", "Штрафной", "Пенальти"],
+                correct: 1
+            },
+            {
+                question: "Сколько судей на поле в официальном матче?",
+                options: ["1", "2", "3", "4"],
+                correct: 0
+            },
+            {
+                question: "Как называется удар с угла поля?",
+                options: ["Аут", "Корнер", "Пенальти", "Фри-кик"],
+                correct: 1
+            },
+            {
+                question: "Сколько метров от ворот находится точка пенальти?",
+                options: ["9 м", "10 м", "11 м", "12 м"],
+                correct: 2
+            }
+        ]
+    };
+
+    function renderTest(testData) {
+        const container = document.getElementById('testContainer');
+        if (!container) return;
+        
+        let html = '';
+        testData.questions.forEach((q, index) => {
+            html += `
+                <div class="question-card" id="question-${index}">
+                    <div class="question-text">${index + 1}. ${q.question}</div>
+                    <ul class="options-list">
+            `;
+            
+            q.options.forEach((option, optIndex) => {
+                html += `
+                    <li class="option-item" data-question="${index}" data-option="${optIndex}" onclick="selectOption(${index}, ${optIndex})">
+                        ${option}
+                    </li>
+                `;
+            });
+            
+            html += `</ul></div>`;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    window.selectOption = function(questionIndex, optionIndex) {
+        const options = document.querySelectorAll(`#question-${questionIndex} .option-item`);
+        options.forEach(opt => opt.classList.remove('selected'));
+        options[optionIndex].classList.add('selected');
+    }
+
+    function checkTest() {
+        const questions = document.querySelectorAll('.question-card');
+        let correctCount = 0;
+        const testData = window.currentTest;
+        
+        questions.forEach((q, index) => {
+            const selected = q.querySelector('.option-item.selected');
+            const correctIndex = testData.questions[index].correct;
+            const options = q.querySelectorAll('.option-item');
+            
+            options.forEach((opt, optIndex) => {
+                opt.classList.add('disabled');
+                if (optIndex === correctIndex) {
+                    opt.classList.add('correct');
+                } else if (opt.classList.contains('selected') && optIndex !== correctIndex) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            if (selected && parseInt(selected.dataset.option) === correctIndex) {
+                correctCount++;
+            }
+        });
+        
+        const resultDiv = document.getElementById('testResult');
+        const percentage = Math.round((correctCount / testData.questions.length) * 100);
+        
+        let resultClass = '';
+        if (percentage >= 80) resultClass = 'good';
+        else if (percentage >= 50) resultClass = 'normal';
+        else resultClass = 'bad';
+        
+        resultDiv.className = `test-result ${resultClass}`;
+        resultDiv.innerHTML = `Вы ответили правильно на ${correctCount} из ${testData.questions.length} вопросов (${percentage}%)`;
+        
+        document.getElementById('submitTest').disabled = true;
+    }
+
+    function resetTest() {
+        const questions = document.querySelectorAll('.question-card');
+        questions.forEach(q => {
+            const options = q.querySelectorAll('.option-item');
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect', 'disabled');
+            });
+        });
+        
+        document.getElementById('testResult').innerHTML = '';
+        document.getElementById('testResult').className = 'test-result';
+        document.getElementById('submitTest').disabled = false;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('testContainer')) {
+            window.currentTest = footballTest;
+            renderTest(footballTest);
+            
+            document.getElementById('submitTest').addEventListener('click', checkTest);
+            document.getElementById('resetTest').addEventListener('click', resetTest);
+        }
+    });
+    </script>
+    
+    <script src="../js/sport-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Баскетбол - SportHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sport-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- Кнопка "Назад" в кружке -->
+                <a href="../index.html" class="back-circle" title="На главную">
+                    <span class="back-arrow">←</span>
+                </a>
+                
+                <div class="header__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li><a href="../index.html#sports" class="nav__link active">Виды спорта</a></li>
+                        <li><a href="../index.html#about" class="nav__link">О проекте</a></li>
+                        <li><a href="../index.html#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Кнопка переключения темы -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="sport-hero" style="background: linear-gradient(135deg, #feca57 0%, #ff9f43 100%);">
+        <div class="container">
+            <h1 class="sport-hero__title">Баскетбол</h1>
+            <p class="sport-hero__subtitle">Командная игра с мячом</p>
+        </div>
+    </section>
+
+    <section class="sport-content">
+        <div class="container">
+            <div class="sport-tabs">
+                <button class="tab-btn active" data-tab="theory">Теория и основы</button>
+                <button class="tab-btn" data-tab="technique">Техника</button>
+                <button class="tab-btn" data-tab="tactics">Тактика</button>
+                <button class="tab-btn" data-tab="programs">Программы</button>
+                <button class="tab-btn" data-tab="test">📝 Тест</button>
+                <button class="tab-btn" data-tab="warmup">🔥 Разминка</button>
+            </div>
+
+            <!-- Вкладка Теория (РАСШИРЕННАЯ) -->
+            <div class="tab-content active" id="theory">
+                <h2>📚 Теория и основы баскетбола</h2>
+                
+                <div class="content-grid">
+                    <!-- История баскетбола -->
+                    <div class="content-card full-width">
+                        <h3>📜 История баскетбола</h3>
+                        <p><strong>1891 год</strong> — баскетбол был изобретен преподавателем физкультуры Джеймсом Нейсмитом в колледже Спрингфилда (Массачусетс, США). Изначально в качестве корзин использовались персиковые корзины, прибитые к балкону на высоте 3.05 метра.</p>
+                        <p><strong>1936 год</strong> — баскетбол дебютировал на Олимпийских играх в Берлине.</p>
+                        <p><strong>1946 год</strong> — основана Национальная баскетбольная ассоциация (НБА) — сильнейшая лига мира.</p>
+                        <p><strong>1992 год</strong> — на Олимпиаде в Барселоне выступила «Команда мечты» (Dream Team) с Майклом Джорданом, Мэджиком Джонсоном и Ларри Бердом.</p>
+                        
+                        <h4>Легендарные игроки:</h4>
+                        <ul>
+                            <li><strong>Майкл Джордан (США)</strong> — 6-кратный чемпион НБА, лучший игрок в истории</li>
+                            <li><strong>Леброн Джеймс (США)</strong> — 4-кратный чемпион НБА, лучший бомбардир в истории</li>
+                            <li><strong>Коби Брайант (США)</strong> — 5-кратный чемпион НБА, легенда "Лос-Анджелес Лейкерс"</li>
+                            <li><strong>Карим Абдул-Джаббар (США)</strong> — рекордсмен по очкам в истории НБА (38 387)</li>
+                            <li><strong>Сергей Белов (СССР)</strong> — лучший баскетболист XX века вне НБА, олимпийский чемпион 1972</li>
+                        </ul>
+                        
+                        <h4>Интересные факты:</h4>
+                        <ul>
+                            <li>Самый результативный матч в истории НБА — 370 очков (Детройт — Денвер, 1983)</li>
+                            <li>Самый высокий баскетболист — Султан Кёсен (рост 251 см)</li>
+                            <li>Самый низкий — Тайрон Боггс (рост 160 см)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Правила игры -->
+                    <div class="content-card full-width">
+                        <h3>⚖️ Правила игры</h3>
+                        
+                        <h4>Площадка и кольцо:</h4>
+                        <ul>
+                            <li><strong>Размер площадки:</strong> 28 × 15 метров</li>
+                            <li><strong>Высота кольца:</strong> 3.05 метра</li>
+                            <li><strong>Диаметр кольца:</strong> 45 см</li>
+                            <li><strong>Трёхочковая линия:</strong> 6.75 м от кольца (ФИБА), 7.24 м (НБА)</li>
+                            <li><strong>Линия штрафного броска:</strong> 4.6 м от щита</li>
+                        </ul>
+                        
+                        <h4>Состав команды:</h4>
+                        <ul>
+                            <li>На площадке одновременно <strong>5 игроков</strong> от каждой команды</li>
+                            <li>В заявке на матч может быть до <strong>12 игроков</strong></li>
+                            <li><strong>Замены:</strong> неограниченное количество, только при остановке игры</li>
+                        </ul>
+                        
+                        <h4>Время игры:</h4>
+                        <ul>
+                            <li><strong>ФИБА:</strong> 4 четверти по 10 минут</li>
+                            <li><strong>НБА:</strong> 4 четверти по 12 минут</li>
+                            <li>Перерыв между четвертями — 2 минуты, большой перерыв — 15 минут</li>
+                            <li>При ничьей — <strong>овертаймы по 5 минут</strong> до победы</li>
+                        </ul>
+                        
+                        <h4>Система подсчёта очков:</h4>
+                        <ul>
+                            <li><strong>За 2 очка:</strong> бросок из-за трёхочковой дуги</li>
+                            <li><strong>За 3 очка:</strong> бросок из-за трёхочковой дуги</li>
+                            <li><strong>За 1 очко:</strong> штрафной бросок</li>
+                        </ul>
+                        
+                        <h4>Основные правила:</h4>
+                        <ul>
+                            <li><strong>Пробежка:</strong> нельзя делать более 2 шагов с мячом без ведения</li>
+                            <li><strong>Двойное ведение:</strong> нельзя вести мяч, остановиться и начать снова</li>
+                            <li><strong>Фол:</strong> любой неспортивный контакт</li>
+                            <li><strong>Зона:</strong> нельзя находиться в зоне соперника более 3 секунд</li>
+                            <li><strong>24 секунды:</strong> на атаку команды (в НБА и ФИБА)</li>
+                            <li><strong>8 секунд:</strong> на переход из зоны защиты в зону нападения</li>
+                            <li><strong>5 секунд:</strong> на ввод мяча из-за боковой</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Экипировка -->
+                    <div class="content-card">
+                        <h3>👕 Экипировка</h3>
+                        <ul>
+                            <li><strong>Кроссовки:</strong> высокие для поддержки голеностопа</li>
+                            <li><strong>Форма:</strong> майка и шорты (домашняя/гостевая)</li>
+                            <li><strong>Мяч:</strong> окружность 75-78 см, вес 600-650 г</li>
+                            <li><strong>Защита:</strong> наколенники, налокотники</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Амплуа игроков -->
+                    <div class="content-card">
+                        <h3>🔢 Амплуа игроков</h3>
+                        <ul>
+                            <li><strong>Разыгрывающий (Point Guard — PG):</strong> организует атаку, ведёт мяч</li>
+                            <li><strong>Атакующий защитник (Shooting Guard — SG):</strong> бросает с дистанции</li>
+                            <li><strong>Лёгкий форвард (Small Forward — SF):</strong> универсальный игрок</li>
+                            <li><strong>Тяжёлый форвард (Power Forward — PF):</strong> играет под кольцом</li>
+                            <li><strong>Центровой (Center — C):</strong> самый высокий, играет в зоне</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Судьи -->
+                    <div class="content-card">
+                        <h3>⚙️ Судейская бригада</h3>
+                        <ul>
+                            <li><strong>2-3 судьи:</strong> следят за порядком, фиксируют фолы и пробежки</li>
+                            <li><strong>Секретарь:</strong> ведёт протокол, счёт, фолы, тайм-ауты</li>
+                            <li><strong>Оператор 24 секунд:</strong> следит за временем атаки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Техника (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="technique">
+                <h2>🎯 Техника баскетбола</h2>
+                
+                <div class="content-grid">
+                    <!-- Броски -->
+                    <div class="content-card full-width">
+                        <h3>🏀 Броски в баскетболе</h3>
+                        
+                        <div class="technique-block">
+                            <h5>1. Бросок одной рукой сверху</h5>
+                            <p><strong>Техника выполнения:</strong></p>
+                            <ol>
+                                <li>Мяч в бьющей руке, вторая рука поддерживает сбоку</li>
+                                <li>Локоть направлен в сторону кольца</li>
+                                <li>В прыжке или с места мяч выпускается кистью</li>
+                                <li>Запястье должно быть расслаблено, пальцы направлены на кольцо</li>
+                            </ol>
+                            <p><strong>Совет:</strong> мяч должен выходить с вращением назад (бекспин).</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>2. Штрафной бросок</h5>
+                            <p><strong>Техника выполнения:</strong></p>
+                            <ol>
+                                <li>Встаньте на линию штрафного броска</li>
+                                <li>Сделайте 1-2 подготовительных удара мячом об пол</li>
+                                <li>Согните колени для амортизации</li>
+                                <li>Выпрямитесь и выбросите мяч вверх</li>
+                            </ol>
+                            <p><strong>Совет:</strong> всегда повторяй одну и ту же последовательность движений.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>3. Бросок в прыжке</h5>
+                            <p><strong>Техника выполнения:</strong></p>
+                            <ol>
+                                <li>Прыжок строго вверх</li>
+                                <li>Мяч выпускается в высшей точке прыжка</li>
+                                <li>Локоть смотрит в кольцо</li>
+                            </ol>
+                            <p><strong>Совет:</strong> не отклоняйся назад и не выпрыгивай вперёд.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>4. Данк</h5>
+                            <p><strong>Техника выполнения:</strong></p>
+                            <ol>
+                                <li>Разбег с мячом</li>
+                                <li>Прыжок с одной или двух ног</li>
+                                <li>В высшей точке забить мяч в кольцо одной или двумя руками</li>
+                            </ol>
+                            <p><strong>Требование:</strong> высокий прыжок (дотронуться до кольца).</p>
+                        </div>
+                        
+                        <h4>Частые ошибки при бросках:</h4>
+                        <ul>
+                            <li>❌ Локоть направлен в сторону (а не в кольцо)</li>
+                            <li>❌ Мяч зажат ладонями (должен лежать на пальцах)</li>
+                            <li>❌ Отсутствие бекспина (вращения назад)</li>
+                            <li>❌ Ранний или поздний выпуск мяча</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Ведение (дриблинг) -->
+                    <div class="content-card full-width">
+                        <h3>🏃‍♂️ Ведение мяча (дриблинг)</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника дриблинга:</h5>
+                            <ol>
+                                <li>Мяч ведётся кончиками пальцев (не ладонью!)</li>
+                                <li>Голова поднята, взгляд вперёд</li>
+                                <li>Корпус слегка наклонён вперёд</li>
+                                <li>Ноги согнуты в коленях для баланса</li>
+                                <li>Рука накрывает мяч сверху</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Виды дриблинга:</h5>
+                            <ul>
+                                <li><strong>Высокий (скоростной):</strong> для быстрого продвижения</li>
+                                <li><strong>Низкий (защитный):</strong> при плотной защите</li>
+                                <li><strong>Перевод между ног:</strong> для смены направления</li>
+                                <li><strong>За спиной:</strong> для неожиданного манёвра</li>
+                                <li><strong>Разворот (спин-мув):</strong> поворот вокруг своей оси</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Взгляд на мяч (не видишь поле)</li>
+                            <li>❌ Слишком сильные удары (потеря контроля)</li>
+                            <li>❌ Прямые ноги (потеря баланса)</li>
+                            <li>❌ Двойное ведение (остановился и продолжил)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Передачи -->
+                    <div class="content-card full-width">
+                        <h3>🤝 Передачи</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Виды передач:</h5>
+                            <ul>
+                                <li><strong>От груди:</strong> самая быстрая и точная</li>
+                                <li><strong>Из-за головы:</strong> для длинных передач</li>
+                                <li><strong>С отскоком (в пол):</strong> сложнее перехватить</li>
+                                <li><strong>Крюком:</strong> для обвода защитника</li>
+                                <li><strong>За спиной:</strong> неожиданная</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Правила передач:</h4>
+                        <ul>
+                            <li>✅ Передача должна быть точной и своевременной</li>
+                            <li>✅ Сопровождай мяч взглядом</li>
+                            <li>✅ Не делай лишних движений</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Защита -->
+                    <div class="content-card full-width">
+                        <h3>🛡️ Защитные действия</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Стойка защитника</h5>
+                            <ul>
+                                <li>Ноги на ширине плеч, согнуты в коленях</li>
+                                <li>Руки разведены в стороны</li>
+                                <li>Взгляд на соперника</li>
+                                <li>Постоянное перемещение приставными шагами</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Подбор мяча</h5>
+                            <p>Блокирование соперника корпусом для занятия позиции при отскоке. Обязательный элемент игры.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Блокшот</h5>
+                            <p>Блокирование броска соперника. Важно не касаться руки бьющего, иначе фол.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Упражнения -->
+                    <div class="content-card">
+                        <h3>📋 Упражнения для отработки</h3>
+                        <ul>
+                            <li><strong>Броски:</strong> с точек, в движении, штрафные</li>
+                            <li><strong>Дриблинг:</strong> обводка стоек, "змейка"</li>
+                            <li><strong>Передачи:</strong> в стену, в парах</li>
+                            <li><strong>Защита:</strong> приставные шаги, блокирование</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тактика (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="tactics">
+                <h2>♟️ Тактика баскетбола</h2>
+                
+                <div class="content-grid">
+                    <!-- Зонная защита -->
+                    <div class="content-card full-width">
+                        <h3>Зонная защита</h3>
+                        <p><strong>Каждый игрок отвечает за свою зону, а не за конкретного соперника.</strong></p>
+                        
+                        <h4>Схемы зонной защиты:</h4>
+                        <ul>
+                            <li><strong>2-3:</strong> 2 игрока вверху, 3 под кольцом</li>
+                            <li><strong>3-2:</strong> 3 игрока вверху, 2 под кольцом</li>
+                            <li><strong>1-3-1:</strong> 1 вверху, 3 по центру, 1 внизу</li>
+                            <li><strong>2-1-2:</strong> классическая</li>
+                        </ul>
+                        
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>✓ Экономит силы игроков</li>
+                            <li>✓ Эффективна против проходов</li>
+                            <li>✓ Защищает слабых защитников</li>
+                        </ul>
+                        
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>✗ Уязвима против точных трёхочковых</li>
+                            <li>✗ Сложно подбирать отскок</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Личная защита -->
+                    <div class="content-card full-width">
+                        <h3>Личная защита</h3>
+                        <p><strong>Каждый игрок держит своего соперника.</strong></p>
+                        
+                        <h4>Виды личной защиты:</h4>
+                        <ul>
+                            <li><strong>Прессинг:</strong> активная защита по всей площадке</li>
+                            <li><strong>Зонный прессинг:</strong> комбинация зонной и личной</li>
+                            <li><strong>С подстраховкой:</strong> помощь партнёру</li>
+                        </ul>
+                        
+                        <h4>Преимущества:</h4>
+                        <ul>
+                            <li>✓ Давление на каждого игрока</li>
+                            <li>✓ Много перехватов</li>
+                            <li>✓ Быстрый переход в атаку</li>
+                        </ul>
+                        
+                        <h4>Недостатки:</h4>
+                        <ul>
+                            <li>✗ Требует хорошей физической формы</li>
+                            <li>✗ Риск фолов</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Быстрый прорыв -->
+                    <div class="content-card full-width">
+                        <h3>⚡ Быстрый прорыв</h3>
+                        <p><strong>Атака после подбора или перехвата.</strong></p>
+                        
+                        <div class="technique-block">
+                            <h5>Ключевые принципы:</h5>
+                            <ul>
+                                <li>Игроки должны бежать в 2-3 линии</li>
+                                <li>Передача должна быть быстрой и точной</li>
+                                <li>Завершение атаки без остановки</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Комбинации -->
+                    <div class="content-card full-width">
+                        <h3>🔥 Популярные комбинации</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Пик-н-ролл (Pick and Roll)</h5>
+                            <p>Игрок ставит заслон (пик), после чего "откатывается" к кольцу (ролл) для получения передачи. Одна из самых эффективных комбинаций в баскетболе.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Пик-н-поп (Pick and Pop)</h5>
+                            <p>Заслоняющий игрок после заслона не идёт к кольцу, а выходит на линию для броска.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Дайв (Dive)</h5>
+                            <p>Быстрый рывок к кольцу после заслона.</p>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Изоляция (Isolation)</h5>
+                            <p>Сильному игроку освобождают одну сторону площадки для атаки один на один.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Психология -->
+                    <div class="content-card">
+                        <h3>🧠 Психология в баскетболе</h3>
+                        <ul>
+                            <li><strong>Хладнокровие:</strong> важнее всего в концовке матча</li>
+                            <li><strong>Командный дух:</strong> доверие партнёрам</li>
+                            <li><strong>Уверенность:</strong> вера в свои броски</li>
+                            <li><strong>Концентрация:</strong> в каждом эпизоде</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Программы (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="programs">
+                <h2>📋 Тренировочные программы по баскетболу</h2>
+                
+                <div class="content-grid">
+                    <!-- Для начинающих -->
+                    <div class="content-card full-width">
+                        <h3>🌱 Программа для начинающих (1-3 месяца)</h3>
+                        <p><strong>Цель:</strong> освоить базовые элементы, поставить технику.</p>
+                        
+                        <h4>Разминка (10-15 мин):</h4>
+                        <ul>
+                            <li>Лёгкий бег, прыжки</li>
+                            <li>Вращение суставов</li>
+                            <li>Специальные беговые упражнения</li>
+                        </ul>
+                        
+                        <h4>Основная часть (40-50 мин):</h4>
+                        <ul>
+                            <li><strong>Постановка броска (работа у щита):</strong> 10 мин</li>
+                            <li><strong>Ведение на месте и в движении:</strong> 10 мин</li>
+                            <li><strong>Ловля и передача мяча:</strong> 10 мин</li>
+                            <li><strong>Стойка защитника:</strong> 5 мин</li>
+                            <li><strong>Штрафные броски:</strong> 5 мин</li>
+                            <li><strong>Учебная игра:</strong> 10-15 мин</li>
+                        </ul>
+                        
+                        <h4>Заминка (5-10 мин):</h4>
+                        <ul>
+                            <li>Растяжка, упражнения на гибкость</li>
+                        </ul>
+                        
+                        <p><strong>Частота:</strong> 2-3 раза в неделю</p>
+                    </div>
+                    
+                    <!-- Для любителей -->
+                    <div class="content-card full-width">
+                        <h3>🏀 Программа для любителей (3-12 месяцев)</h3>
+                        <p><strong>Цель:</strong> закрепить технику, изучить тактику.</p>
+                        
+                        <h4>Разминка (15 мин):</h4>
+                        <ul>
+                            <li>Бег с ускорениями</li>
+                            <li>Прыжковые упражнения</li>
+                            <li>Имитация бросков</li>
+                        </ul>
+                        
+                        <h4>Основная часть (50-60 мин):</h4>
+                        <ul>
+                            <li><strong>Броски с точек (коротких и дальних):</strong> 10 мин</li>
+                            <li><strong>Броски после ведения:</strong> 10 мин</li>
+                            <li><strong>Броски в движении:</strong> 10 мин</li>
+                            <li><strong>Передачи в движении:</strong> 5 мин</li>
+                            <li><strong>Игровые комбинации (пик-н-ролл):</strong> 10 мин</li>
+                            <li><strong>Двусторонняя игра:</strong> 15-20 мин</li>
+                        </ul>
+                        
+                        <h4>Заминка (5-10 мин):</h4>
+                        <ul>
+                            <li>Упражнения на восстановление, растяжка</li>
+                        </ul>
+                        
+                        <p><strong>Частота:</strong> 3-4 раза в неделю</p>
+                    </div>
+                    
+                    <!-- Физическая подготовка -->
+                    <div class="content-card full-width">
+                        <h3>💪 Физическая подготовка баскетболиста</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Прыжковые упражнения</h5>
+                            <ul>
+                                <li>Прыжки на скакалке — 3 подхода по 1 минуте</li>
+                                <li>Прыжки вверх с места — 3×15</li>
+                                <li>Выпрыгивания из приседа — 3×12</li>
+                                <li>Доставание до высокой точки — 3×10</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Скоростные упражнения</h5>
+                            <ul>
+                                <li>Челночный бег 5×10 м — 3 подхода</li>
+                                <li>Спринты на 20-30 м — 6-8 раз</li>
+                                <li>Ускорения из разных положений — 5×10 м</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Силовая подготовка</h5>
+                            <ul>
+                                <li>Приседания — 3×20</li>
+                                <li>Выпады — 3×12 на каждую ногу</li>
+                                <li>Отжимания — 3×15</li>
+                                <li>Планка — 3×30 сек</li>
+                                <li>Подтягивания (по возможности) — 3×5-10</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Координация</h5>
+                            <ul>
+                                <li>Ведение двух мячей одновременно</li>
+                                <li>Упражнения с координационной лестницей</li>
+                                <li>Ловля теннисного мяча</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Тесты и нормативы -->
+                    <div class="content-card">
+                        <h3>📊 Тесты и нормативы</h3>
+                        <ul>
+                            <li><strong>Штрафные броски:</strong> 7 из 10 — отлично</li>
+                            <li><strong>Челночный бег 5×10 м:</strong> менее 12 сек</li>
+                            <li><strong>Прыжок вверх:</strong> более 50 см — отлично</li>
+                            <li><strong>Ведение с обводкой стоек:</strong> менее 15 сек</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Питание -->
+                    <div class="content-card">
+                        <h3>🥗 Питание баскетболиста</h3>
+                        <ul>
+                            <li><strong>До игры:</strong> сложные углеводы за 1.5-2 часа</li>
+                            <li><strong>После игры:</strong> белки + углеводы</li>
+                            <li><strong>Питьевой режим:</strong> 1.5-2 л воды в день</li>
+                            <li><strong>Рекомендуемые продукты:</strong> курица, рыба, рис, овощи, фрукты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тест -->
+            <div class="tab-content" id="test">
+                <h2>Тест: Проверь свои знания о баскетболе</h2>
+                <div class="test-container" id="testContainer">
+                    <!-- Сюда будут добавляться вопросы -->
+                </div>
+                <div class="test-result" id="testResult"></div>
+                <button class="btn btn--primary" id="submitTest">Проверить ответы</button>
+                <button class="btn btn--secondary" id="resetTest" style="margin-left: 10px;">Пройти заново</button>
+            </div>
+
+            <!-- Вкладка Разминка -->
+            <div class="tab-content" id="warmup">
+                <h2>🏀 Разминка перед баскетболом</h2>
+                <p class="warmup-intro">Чтобы избежать травм и прыгать выше, обязательно разминайся 10-12 минут перед игрой.</p>
+                
+                <div class="warmup-table">
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Кардио</div>
+                        <div class="warmup-cell">Бег с захлёстом голени + прыжки</div>
+                        <div class="warmup-cell">3 мин</div>
+                        <div class="warmup-cell">Разогреть сердечно-сосудистую</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Суставы</div>
+                        <div class="warmup-cell">Вращение кистями, локтями, плечами</div>
+                        <div class="warmup-cell">по 15 раз</div>
+                        <div class="warmup-cell">Подготовить руки к броскам</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Прыжки</div>
+                        <div class="warmup-cell">Скакалка или прыжки на месте</div>
+                        <div class="warmup-cell">50 раз</div>
+                        <div class="warmup-cell">Активировать голеностоп</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Динамика</div>
+                        <div class="warmup-cell">Выпады с поворотом корпуса</div>
+                        <div class="warmup-cell">по 8 раз</div>
+                        <div class="warmup-cell">Растянуть спину и ноги</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Спец. упр.</div>
+                        <div class="warmup-cell">Имитация ведения в низкой стойке</div>
+                        <div class="warmup-cell">30 сек</div>
+                        <div class="warmup-cell">Настроить дриблинг</div>
+                    </div>
+                </div>
+                
+                <div class="warmup-tip">
+                    <strong>💡 Совет:</strong> баскетбол — это прыжки, поэтому обязательно разогрей ахилл и голеностоп!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                    <p class="footer__copy">© 2026 SportHub. Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="volleyball.html">Волейбол</a></li>
+                        <li><a href="football.html">Футбол</a></li>
+                        <li><a href="basketball.html">Баскетбол</a></li>
+                        <li><a href="athletics.html">Лёгкая атлетика</a></li>
+                        <li><a href="powerlifting.html">Пауэрлифтинг</a></li>
+                        <li><a href="fitness.html">Фитнес</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4>Проект выполнил</h4>
+                    <p>Тарощин Дмитрий<br>10 «А» класс</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+    <!-- Тест по баскетболу -->
+    <script>
+    const basketballTest = {
+        questions: [
+            {
+                question: "В каком году придумали баскетбол?",
+                options: ["1891", "1895", "1900", "1887"],
+                correct: 0
+            },
+            {
+                question: "Сколько игроков в команде на площадке?",
+                options: ["4", "5", "6", "7"],
+                correct: 1
+            },
+            {
+                question: "На какой высоте находится кольцо?",
+                options: ["2.95 м", "3.00 м", "3.05 м", "3.10 м"],
+                correct: 2
+            },
+            {
+                question: "Сколько очков дается за штрафной бросок?",
+                options: ["1", "2", "3", "4"],
+                correct: 0
+            },
+            {
+                question: "Сколько времени дается на атаку в NBA?",
+                options: ["14 сек", "20 сек", "24 сек", "30 сек"],
+                correct: 2
+            },
+            {
+                question: "Какой размер площадки?",
+                options: ["26х14 м", "28х15 м", "30х16 м", "25х14 м"],
+                correct: 1
+            },
+            {
+                question: "Сколько шагов можно сделать с мячом без ведения?",
+                options: ["1", "2", "3", "4"],
+                correct: 1
+            },
+            {
+                question: "Кто придумал баскетбол?",
+                options: ["Джеймс Нейсмит", "Майкл Джордан", "Уильям Морган", "Пьер де Кубертен"],
+                correct: 0
+            },
+            {
+                question: "Сколько длится четверть в NBA?",
+                options: ["10 мин", "12 мин", "15 мин", "20 мин"],
+                correct: 1
+            },
+            {
+                question: "Что такое 'дабл-дабл'?",
+                options: ["Два очка", "Два подбора", "Два двузначных показателя", "Две победы"],
+                correct: 2
+            }
+        ]
+    };
+
+    function renderTest(testData) {
+        const container = document.getElementById('testContainer');
+        if (!container) return;
+        
+        let html = '';
+        testData.questions.forEach((q, index) => {
+            html += `
+                <div class="question-card" id="question-${index}">
+                    <div class="question-text">${index + 1}. ${q.question}</div>
+                    <ul class="options-list">
+            `;
+            
+            q.options.forEach((option, optIndex) => {
+                html += `
+                    <li class="option-item" data-question="${index}" data-option="${optIndex}" onclick="selectOption(${index}, ${optIndex})">
+                        ${option}
+                    </li>
+                `;
+            });
+            
+            html += `</ul></div>`;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    window.selectOption = function(questionIndex, optionIndex) {
+        const options = document.querySelectorAll(`#question-${questionIndex} .option-item`);
+        options.forEach(opt => opt.classList.remove('selected'));
+        options[optionIndex].classList.add('selected');
+    }
+
+    function checkTest() {
+        const questions = document.querySelectorAll('.question-card');
+        let correctCount = 0;
+        const testData = window.currentTest;
+        
+        questions.forEach((q, index) => {
+            const selected = q.querySelector('.option-item.selected');
+            const correctIndex = testData.questions[index].correct;
+            const options = q.querySelectorAll('.option-item');
+            
+            options.forEach((opt, optIndex) => {
+                opt.classList.add('disabled');
+                if (optIndex === correctIndex) {
+                    opt.classList.add('correct');
+                } else if (opt.classList.contains('selected') && optIndex !== correctIndex) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            if (selected && parseInt(selected.dataset.option) === correctIndex) {
+                correctCount++;
+            }
+        });
+        
+        const resultDiv = document.getElementById('testResult');
+        const percentage = Math.round((correctCount / testData.questions.length) * 100);
+        
+        let resultClass = '';
+        if (percentage >= 80) resultClass = 'good';
+        else if (percentage >= 50) resultClass = 'normal';
+        else resultClass = 'bad';
+        
+        resultDiv.className = `test-result ${resultClass}`;
+        resultDiv.innerHTML = `Вы ответили правильно на ${correctCount} из ${testData.questions.length} вопросов (${percentage}%)`;
+        
+        document.getElementById('submitTest').disabled = true;
+    }
+
+    function resetTest() {
+        const questions = document.querySelectorAll('.question-card');
+        questions.forEach(q => {
+            const options = q.querySelectorAll('.option-item');
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect', 'disabled');
+            });
+        });
+        
+        document.getElementById('testResult').innerHTML = '';
+        document.getElementById('testResult').className = 'test-result';
+        document.getElementById('submitTest').disabled = false;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('testContainer')) {
+            window.currentTest = basketballTest;
+            renderTest(basketballTest);
+            
+            document.getElementById('submitTest').addEventListener('click', checkTest);
+            document.getElementById('resetTest').addEventListener('click', resetTest);
+        }
+    });
+    </script>
+    
+    <script src="../js/sport-page.js"></script>
+</body>
+</html>

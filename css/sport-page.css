@@ -1,0 +1,370 @@
+/* Стили для страниц видов спорта */
+.sport-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 30px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.content-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.content-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Стили для теста */
+.test-container {
+    margin: 30px 0;
+}
+
+.question-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.question-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+}
+
+.option-item {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.option-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.option-item.selected {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.option-item.correct {
+    background: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.option-item.incorrect {
+    background: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.option-item.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.test-result {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f8f9fa;
+}
+
+.test-result.good {
+    background: #d4edda;
+    color: #155724;
+}
+
+.test-result.normal {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.test-result.bad {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Тёмная тема для теста */
+body.dark-theme .question-card {
+    background: #2d2d2d;
+}
+
+body.dark-theme .question-text {
+    color: #fff;
+}
+
+body.dark-theme .option-item {
+    background: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.dark-theme .option-item:hover {
+    background: #4a4a4a;
+}
+
+body.dark-theme .option-item.selected {
+    background: var(--primary-color);
+    color: white;
+}
+
+body.dark-theme .test-result {
+    background: #3a3a3a;
+    color: #e0e0e0;
+}
+/* ===== СТИЛИ ДЛЯ РАЗМИНКИ ===== */
+.warmup-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-color);
+    line-height: 1.6;
+}
+
+.warmup-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.warmup-row {
+    display: table-row;
+}
+
+/* ВЕРХНЯЯ СТРОКА ПОЛНОСТЬЮ УДАЛЕНА */
+
+.warmup-cell {
+    display: table-cell;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.warmup-row:hover {
+    background-color: #f5f5f5;
+}
+
+.warmup-tip {
+    padding: 20px;
+    background: #fff3cd;
+    border-radius: 10px;
+    border-left: 5px solid #ffc107;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.warmup-tip strong {
+    color: #856404;
+}
+
+/* Тёмная тема */
+body.dark-theme .warmup-intro {
+    background: #2c3e50;
+    color: #ecf0f1;
+    border-left-color: var(--primary-color);
+}
+
+body.dark-theme .warmup-cell {
+    border-color: #444;
+}
+
+body.dark-theme .warmup-row:hover {
+    background-color: #3a3a3a;
+}
+
+body.dark-theme .warmup-tip {
+    background: #3d3d1f;
+    border-left-color: #ffd700;
+}
+
+body.dark-theme .warmup-tip strong {
+    color: #ffd700;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .warmup-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin: 15px 0 25px 0;
+    }
+    
+    .warmup-cell {
+        min-width: 140px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .warmup-intro {
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .warmup-tip {
+        font-size: 15px;
+        padding: 15px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .warmup-cell {
+        min-width: 120px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .warmup-intro {
+        font-size: 15px;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+}
+/* Дополнительные стили для расширенного контента */
+.content-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.content-card h4 {
+    margin: 15px 0 10px 0;
+    color: var(--dark-color);
+    font-size: 18px;
+}
+
+.content-card ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.content-card li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.content-card li strong {
+    color: var(--primary-color);
+}
+
+/* Тёмная тема */
+body.dark-theme .content-card h4 {
+    color: #fff;
+}
+
+body.dark-theme .content-card li {
+    color: #e0e0e0;
+}
+/* Стили для расширенной техники */
+.technique-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.technique-block h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.technique-block ol,
+.technique-block ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.technique-block li {
+    margin-bottom: 5px;
+}
+
+.technique-block p {
+    margin: 10px 0;
+}
+
+/* Тёмная тема */
+body.dark-theme .technique-block {
+    background: #2d2d2d;
+}
+
+body.dark-theme .technique-block h5 {
+    color: #fff;
+}
+
+body.dark-theme .technique-block li {
+    color: #e0e0e0;
+}

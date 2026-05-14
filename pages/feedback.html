@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - SportHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- Кнопка "Назад" в кружке -->
+                <a href="../index.html" class="back-circle" title="На главную">
+                    <span class="back-arrow">←</span>
+                </a>
+                
+                <div class="header__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li><a href="../index.html#sports" class="nav__link">Виды спорта</a></li>
+                        <li><a href="../index.html#about" class="nav__link">О проекте</a></li>
+                        <li><a href="feedback.html" class="nav__link active">Отзывы</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Кнопка переключения темы -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="feedback-hero">
+        <div class="container">
+            <h1 class="feedback-hero__title">Отзывы и предложения</h1>
+            <p class="feedback-hero__subtitle">Оставьте своё мнение о сайте и помогите нам стать лучше</p>
+        </div>
+    </section>
+
+    <section class="feedback-form-section">
+        <div class="container">
+            <div class="feedback-container">
+                <h2>Оставить отзыв</h2>
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email (для ответа)</label>
+                        <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rating">Оценка сайта *</label>
+                        <div class="rating-stars" id="ratingStars">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <input type="hidden" id="rating" name="rating" value="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sport">Какой вид спорта вас интересует?</label>
+                        <select id="sport" name="sport">
+                            <option value="">Выберите...</option>
+                            <option value="volleyball">Волейбол</option>
+                            <option value="football">Футбол</option>
+                            <option value="basketball">Баскетбол</option>
+                            <option value="athletics">Лёгкая атлетика</option>
+                            <option value="powerlifting">Пауэрлифтинг</option>
+                            <option value="fitness">Фитнес</option>
+                            <option value="all">Все виды</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Ваш отзыв или предложение *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Напишите, что вам понравилось или что можно улучшить..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Я согласен на обработку моих данных</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary">Отправить отзыв</button>
+                </form>
+                
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <h3>Спасибо за ваш отзыв! 🌟</h3>
+                    <p>Мы ценим ваше мнение и постараемся стать лучше.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-list-section">
+        <div class="container">
+            <h2>Последние отзывы</h2>
+            <div class="reviews-container" id="reviewsContainer">
+                <!-- Отзывы будут загружаться сюда -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                    <p class="footer__copy">© 2026 SportHub. Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="volleyball.html">Волейбол</a></li>
+                        <li><a href="football.html">Футбол</a></li>
+                        <li><a href="basketball.html">Баскетбол</a></li>
+                        <li><a href="athletics.html">Лёгкая атлетика</a></li>
+                        <li><a href="powerlifting.html">Пауэрлифтинг</a></li>
+                        <li><a href="fitness.html">Фитнес</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4>Проект выполнил</h4>
+                    <p>Тарощин Дмитрий<br>10 «А» класс</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/feedback.js"></script>
+</body>
+</html>

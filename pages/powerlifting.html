@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пауэрлифтинг - SportHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sport-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- Кнопка "Назад" в кружке -->
+                <a href="../index.html" class="back-circle" title="На главную">
+                    <span class="back-arrow">←</span>
+                </a>
+                
+                <div class="header__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li><a href="../index.html#sports" class="nav__link active">Виды спорта</a></li>
+                        <li><a href="../index.html#about" class="nav__link">О проекте</a></li>
+                        <li><a href="../index.html#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Кнопка переключения темы -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="sport-hero" style="background: linear-gradient(135deg, #5f27cd 0%, #341f97 100%);">
+        <div class="container">
+            <h1 class="sport-hero__title">Пауэрлифтинг</h1>
+            <p class="sport-hero__subtitle">Силовое троеборье</p>
+        </div>
+    </section>
+
+    <section class="sport-content">
+        <div class="container">
+            <div class="sport-tabs">
+                <button class="tab-btn active" data-tab="theory">Теория и основы</button>
+                <button class="tab-btn" data-tab="technique">Техника</button>
+                <button class="tab-btn" data-tab="tactics">Соревнования</button>
+                <button class="tab-btn" data-tab="programs">Программы</button>
+                <button class="tab-btn" data-tab="test">📝 Тест</button>
+                <button class="tab-btn" data-tab="warmup">🔥 Разминка</button>
+            </div>
+
+            <!-- Вкладка Теория (РАСШИРЕННАЯ) -->
+            <div class="tab-content active" id="theory">
+                <h2>📚 Теория и основы пауэрлифтинга</h2>
+                
+                <div class="content-grid">
+                    <!-- Что такое пауэрлифтинг -->
+                    <div class="content-card full-width">
+                        <h3>🏋️ Что такое пауэрлифтинг?</h3>
+                        <p>Пауэрлифтинг (силовое троеборье) — это силовой вид спорта, в котором спортсмен выполняет три базовых упражнения: <strong>приседания со штангой, жим лёжа и становую тягу</strong>. Победитель определяется по сумме лучших результатов в трёх упражнениях.</p>
+                    </div>
+                    
+                    <!-- История -->
+                    <div class="content-card full-width">
+                        <h3>📜 История пауэрлифтинга</h3>
+                        <p><strong>1950-е годы</strong> — пауэрлифтинг зародился в США как альтернатива тяжёлой атлетике.</p>
+                        <p><strong>1971 год</strong> — первый чемпионат мира по пауэрлифтингу (IPF).</p>
+                        <p><strong>1980-е годы</strong> — активное развитие в России.</p>
+                        <p><strong>1990 год</strong> — создана Федерация пауэрлифтинга России.</p>
+                        <p><strong>1992 год</strong> — пауэрлифтинг включён в Всемирные игры.</p>
+                        
+                        <h4>Легендарные спортсмены:</h4>
+                        <ul>
+                            <li><strong>Эдди Коэн (Великобритания)</strong> — первый человек, присевший 400 кг</li>
+                            <li><strong>Эд Холл (Великобритания)</strong> — первый человек, поднявший 500 кг в становой тяге (в экипировке)</li>
+                            <li><strong>Хафтор Бьёрнссон (Исландия)</strong> — 501 кг в становой тяге (2020 год)</li>
+                            <li><strong>Андрей Маланичев (Россия)</strong> — многократный чемпион мира IPF</li>
+                            <li><strong>Юрий Белкин (Россия)</strong> — абсолютный рекордсмен в безэкипировочном дивизионе</li>
+                        </ul>
+                        
+                        <h4>Интересные факты:</h4>
+                        <ul>
+                            <li>Самый лёгкий вес штанги на соревнованиях — 40 кг (пустой гриф 20 кг + 2 блина по 10 кг)</li>
+                            <li>Мировой рекорд в становой тяге (без экипировки) — 460 кг (Хафтор Бьёрнссон)</li>
+                            <li>Россия — одна из сильнейших стран в мировом пауэрлифтинге</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Экипировка -->
+                    <div class="content-card full-width">
+                        <h3>👕 Экипировка пауэрлифтера</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Однослойная экипировка (IPF):</h5>
+                            <ul>
+                                <li><strong>Майка для жима лежа:</strong> увеличивает результат на 10-20 кг</li>
+                                <li><strong>Бинты на колени:</strong> дают дополнительную поддержку при приседаниях</li>
+                                <li><strong>Пояс:</strong> защищает поясницу и увеличивает внутрибрюшное давление</li>
+                                <li><strong>Комбинезон для приседаний:</strong> увеличивает результат</li>
+                                <li><strong>Лямки для становой тяги:</strong> помогают удержать штангу</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Безэкипировочный пауэрлифтинг (RAW):</h5>
+                            <ul>
+                                <li><strong>Пояс</strong> (разрешён)</li>
+                                <li><strong>Бинты на запястья</strong> (разрешены)</li>
+                                <li><strong>Напульсники и наколенники</strong> (для тепла, не дают прибавки)</li>
+                            </ul>
+                            <p><strong>Важно:</strong> в RAW-дивизионе запрещены комбинезоны, майки и бинты на колени!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Весовые категории -->
+                    <div class="content-card">
+                        <h3>⚖️ Весовые категории (IPF)</h3>
+                        <h4>Мужчины:</h4>
+                        <ul>
+                            <li>до 53 кг, 59 кг, 66 кг, 74 кг, 83 кг, 93 кг, 105 кг, 120 кг, 120+ кг</li>
+                        </ul>
+                        <h4>Женщины:</h4>
+                        <ul>
+                            <li>до 43 кг, 47 кг, 52 кг, 57 кг, 63 кг, 72 кг, 84 кг, 84+ кг</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Федераций -->
+                    <div class="content-card">
+                        <h3>🏛️ Федераций</h3>
+                        <ul>
+                            <li><strong>IPF</strong> — самая строгая (допинг-контроль, экипировка ограничена)</li>
+                            <li><strong>FPR</strong> — российская федерация</li>
+                            <li><strong>WRPF</strong> — разрешена многослойная экипировка</li>
+                            <li><strong>WPC/AWPC</strong> — есть бездопинговые лиги</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Техника (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="technique">
+                <h2>🎯 Техника упражнений</h2>
+                
+                <div class="content-grid">
+                    <!-- Приседания -->
+                    <div class="content-card full-width">
+                        <h3>🏋️ Приседания со штангой</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника выполнения (классический вариант — low bar):</h5>
+                            <ol>
+                                <li><strong>Подход к штанге:</strong> встать под гриф, поместить его на трапецию (для low bar — чуть ниже, на задние дельты)</li>
+                                <li><strong>Снятие штанги:</strong> вдох, напрячь спину, отойти назад 1-2 шага</li>
+                                <li><strong>Постановка ног:</strong> чуть шире плеч, носки слегка развёрнуты в стороны</li>
+                                <li><strong>Опускание:</strong> таз отводится назад, спина прямая, грудь вперёд</li>
+                                <li><strong>Глубина:</strong> бедро должно опуститься ниже параллели с полом</li>
+                                <li><strong>Подъём:</strong> мощное выпрямление ног и таза</li>
+                                <li><strong>Фиксация:</strong> полное выпрямление ног и спины</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Важные моменты:</h5>
+                            <ul>
+                                <li>✅ Гриф не должен лежать на шее — только на мышцах спины</li>
+                                <li>✅ Взгляд вперёд или чуть вверх — не вниз!</li>
+                                <li>✅ Грудная клетка раскрыта</li>
+                                <li>✅ Дыхание: вдох на опускании, выдох на подъёме</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Округление спины</li>
+                            <li>❌ Отрыв пяток от пола</li>
+                            <li>❌ Недосед (глубина выше параллели) — на соревнованиях не засчитают</li>
+                            <li>❌ Завал штанги вперёд</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Жим лежа -->
+                    <div class="content-card full-width">
+                        <h3>🏋️ Жим лёжа</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника выполнения (для пауэрлифтинга):</h5>
+                            <ol>
+                                <li><strong>Исходное положение:</strong> лёжа на скамье, глаза под грифом</li>
+                                <li><strong>Постановка ног:</strong> жёстко упереться в пол (для стабильности)</li>
+                                <li><strong>Прогиб в спине (мост):</strong> лопатки сведены, таз приподнят (в пределах правил)</li>
+                                <li><strong>Хват:</strong> на ширине плеч или чуть шире, гриф в основании ладони</li>
+                                <li><strong>Снятие штанги:</strong> на вдохе, с помощью ассистента</li>
+                                <li><strong>Опускание:</strong> подконтрольно, локти под 45° к корпусу</li>
+                                <li><strong>Касание груди:</strong> обязательно касание (в соревнованиях)</li>
+                                <li><strong>Жим:</strong> мощное выпрямление рук</li>
+                                <li><strong>Фиксация:</strong> полное выпрямление рук, пауза по команде судьи</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Важные моменты:</h5>
+                            <ul>
+                                <li>✅ Лопатки должны быть сведены на протяжении всего подхода</li>
+                                <li>✅ Штанга должна опускаться на грудь, а не на живот</li>
+                                <li>✅ Локти не должны расходиться в стороны</li>
+                                <li>✅ Запястья не должны заламываться</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Отрыв таза от скамьи — в соревнованиях не засчитают</li>
+                            <li>❌ Отрыв головы</li>
+                            <li>❌ Отскок штанги от груди</li>
+                            <li>❌ Неполное выпрямление рук</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Становая тяга -->
+                    <div class="content-card full-width">
+                        <h3>🏋️ Становая тяга</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Техника выполнения (классическая):</h5>
+                            <ol>
+                                <li><strong>Подход:</strong> стопы на ширине таза, носки под грифом</li>
+                                <li><strong>Хват:</strong> на ширине плеч (можно разнохват для большего веса)</li>
+                                <li><strong>Начало:</strong> вдох, спина прямая, грудь вперёд</li>
+                                <li><strong>Отрыв:</strong> включаем ноги, штанга скользит по голеням</li>
+                                <li><strong>Подъём:</strong> одновременно выпрямляются ноги и спина</li>
+                                <li><strong>Фиксация:</strong> полное выпрямление, плечи отведены назад</li>
+                                <li><strong>Опускание:</strong> подконтрольно, спина прямая</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Вариант "сумо":</h5>
+                            <ul>
+                                <li>Ноги широко расставлены, носки развёрнуты</li>
+                                <li>Корпус более вертикальный</li>
+                                <li>Подходит людям с длинными ногами</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Важные моменты:</h5>
+                            <ul>
+                                <li>✅ Спина должна быть прямой на всём протяжении движения</li>
+                                <li>✅ Штанга должна скользить по ногам</li>
+                                <li>✅ В верхней точке — замок (плечи назад)</li>
+                                <li>✅ Не нужно бросать штангу — опускай под контролем</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>Частые ошибки:</h4>
+                        <ul>
+                            <li>❌ Округление спины (опасно для позвоночника!)</li>
+                            <li>❌ Рывок в начале движения</li>
+                            <li>❌ Сгибание рук</li>
+                            <li>❌ Неполная фиксация вверху</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Дыхание -->
+                    <div class="content-card full-width">
+                        <h3>😤 Дыхание в пауэрлифтинге</h3>
+                        <p>Правильное дыхание критически важно для безопасности и результата!</p>
+                        <ul>
+                            <li><strong>Перед опусканием:</strong> глубокий вдох</li>
+                            <li><strong>В негативной фазе:</strong> задержка дыхания (создаёт внутрибрюшное давление)</li>
+                            <li><strong>На подъёме:</strong> мощный выдох после прохождения сложного участка</li>
+                            <li><strong>В становой тяге:</strong> вдох внизу, задержка на всём подъёме, выдох вверху</li>
+                        </ul>
+                        <p><strong>⚠️ Важно:</strong> не выдыхай на самом сложном участке — это снижает стабильность корпуса!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Соревнования (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="tactics">
+                <h2>🏆 Соревнования по пауэрлифтингу</h2>
+                
+                <div class="content-grid">
+                    <!-- Структура -->
+                    <div class="content-card full-width">
+                        <h3>Структура соревнований</h3>
+                        <ul>
+                            <li>Соревнования проходят в следующем порядке: <strong>приседания → жим лёжа → становая тяга</strong></li>
+                            <li>В каждом упражнении даётся <strong>3 подхода</strong></li>
+                            <li>В зачёт идёт <strong>лучший результат</strong> в каждом упражнении</li>
+                            <li>Победитель определяется по <strong>сумме трёх упражнений</strong></li>
+                            <li>При равенстве суммы побеждает спортсмен с меньшим весом</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Тактика выбора веса -->
+                    <div class="content-card full-width">
+                        <h3>Тактика выбора веса</h3>
+                        <div class="technique-block">
+                            <h5>Классическая стратегия:</h5>
+                            <ul>
+                                <li><strong>1-й подход:</strong> 90% от планируемого (уверенный вес)</li>
+                                <li><strong>2-й подход:</strong> рабочий вес (100-102%)</li>
+                                <li><strong>3-й подход:</strong> рекордный (105-108%)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Советы:</h5>
+                            <ul>
+                                <li>✅ Первый подход должен быть уверенным — лучше взять меньше, но сделать</li>
+                                <li>✅ Если провалил первый подход — не рискуй во втором</li>
+                                <li>✅ Важно оставить силы на все упражнения</li>
+                                <li>✅ Следи за суммой — иногда лучше взять меньше, но подняться в весовой категории</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Правила -->
+                    <div class="content-card full-width">
+                        <h3>Правила выполнения упражнений (IPF)</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Приседания:</h5>
+                            <ul>
+                                <li>Глубина — бедро ниже параллели</li>
+                                <li>Команды: "Squat" → выполнение → "Rack"</li>
+                                <li>Гриф должен быть неподвижен в начале</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Жим лёжа:</h5>
+                            <ul>
+                                <li>Команды: "Start" → опускание → "Press" → жим → "Rack"</li>
+                                <li>Пауза на груди — штанга неподвижна</li>
+                                <li>Таз не отрывать, голова не поднимать</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Становая тяга:</h5>
+                            <ul>
+                                <li>Команда: "Down" — опускание штанги</li>
+                                <li>Без "помочи" ног (движение только вниз)</li>
+                                <li>Локти не сгибать</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Причины, по которым подход не засчитывают:</h5>
+                            <ul>
+                                <li>❌ Недосед в приседаниях (выше параллели)</li>
+                                <li>❌ Отрыв таза или головы в жиме</li>
+                                <li>❌ Отскок штанги от груди</li>
+                                <li>❌ Опускание штанги с "помочью" (движение ног вниз) в становой</li>
+                                <li>❌ Помощь ассистентов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Федерации -->
+                    <div class="content-card full-width">
+                        <h3>Основные федерации</h3>
+                        <div class="technique-block">
+                            <h5>IPF (International Powerlifting Federation)</h5>
+                            <ul>
+                                <li>Самая строгая федерация</li>
+                                <li>Жёсткий допинг-контроль</li>
+                                <li>Однослойная экипировка или RAW</li>
+                                <li>Единственная федерация в программе Всемирных игр</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>WRPF (World Raw Powerlifting Federation)</h5>
+                            <ul>
+                                <li>RAW и многослойная экипировка</li>
+                                <li>Менее строгие правила</li>
+                                <li>Популярна среди рекордсменов</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>WPC/AWPC</h5>
+                            <ul>
+                                <li>AWPC — бездопинговая лига WPC</li>
+                                <li>Экипировка любая</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Психология -->
+                    <div class="content-card">
+                        <h3>🧠 Психология на соревнованиях</h3>
+                        <ul>
+                            <li><strong>Настрой:</strong> уверенность в каждом подходе</li>
+                            <li><strong>Концентрация:</strong> не отвлекайся на соперников</li>
+                            <li><strong>Управление стрессом:</strong> дыхательные техники</li>
+                            <li><strong>Визуализация:</strong> прокрути подход в голове</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Программы (РАСШИРЕННАЯ) -->
+            <div class="tab-content" id="programs">
+                <h2>📋 Тренировочные программы по пауэрлифтингу</h2>
+                
+                <div class="content-grid">
+                    <!-- Для начинающих -->
+                    <div class="content-card full-width">
+                        <h3>🌱 Программа для начинающих (1-3 месяца)</h3>
+                        <p><strong>Цель:</strong> освоить технику, привыкнуть к нагрузкам.</p>
+                        
+                        <h4>Разминка (10-15 мин):</h4>
+                        <ul>
+                            <li>Кардио 5 мин</li>
+                            <li>Суставная гимнастика</li>
+                            <li>Работа с пустым грифом (по 10 повторений)</li>
+                        </ul>
+                        
+                        <h4>Основная часть (40-50 мин):</h4>
+                        <ul>
+                            <li><strong>Приседания:</strong> 3-4 подхода по 5-8 повторений</li>
+                            <li><strong>Жим лёжа:</strong> 3-4 подхода по 5-8 повторений</li>
+                            <li><strong>Становая тяга:</strong> 3 подхода по 5 повторений</li>
+                            <li><strong>Подсобка:</strong> гиперэкстензия, подтягивания</li>
+                        </ul>
+                        
+                        <h4>Заминка (5-10 мин):</h4>
+                        <ul>
+                            <li>Растяжка, упражнения на гибкость</li>
+                        </ul>
+                        
+                        <p><strong>Частота:</strong> 3 раза в неделю (ПН — присед+жим, СР — присед+тяга, ПТ — присед+жим)</p>
+                    </div>
+                    
+                    <!-- Программа 5х5 -->
+                    <div class="content-card full-width">
+                        <h3>🔥 Программа 5×5 (StrongLifts)</h3>
+                        <p><strong>Популярная программа для прогрессии.</strong></p>
+                        
+                        <div class="technique-block">
+                            <h5>День А (ПН):</h5>
+                            <ul>
+                                <li>Приседания 5×5</li>
+                                <li>Жим лёжа 5×5</li>
+                                <li>Тяга штанги в наклоне 5×5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>День Б (СР):</h5>
+                            <ul>
+                                <li>Приседания 5×5</li>
+                                <li>Жим стоя 5×5</li>
+                                <li>Становая тяга 1×5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>День В (ПТ):</h5>
+                            <ul>
+                                <li>Приседания 5×5</li>
+                                <li>Жим лёжа 5×5</li>
+                                <li>Тяга штанги в наклоне 5×5</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Прогрессия:</strong> +2.5 кг к приседу и тяге, +2.5 кг к жиму каждую тренировку.</p>
+                    </div>
+                    
+                    <!-- Вспомогательные упражнения -->
+                    <div class="content-card full-width">
+                        <h3>💪 Вспомогательные упражнения</h3>
+                        
+                        <div class="technique-block">
+                            <h5>Для приседаний:</h5>
+                            <ul>
+                                <li>Жим ногами — 3×12</li>
+                                <li>Выпады с гантелями — 3×10 на каждую ногу</li>
+                                <li>Приседания в тренажёре Смита — 3×12</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Для жима лёжа:</h5>
+                            <ul>
+                                <li>Французский жим (трицепс) — 3×10</li>
+                                <li>Разводка гантелей — 3×12</li>
+                                <li>Жим узким хватом — 3×10</li>
+                                <li>Отжимания на брусьях — 3×8-12</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technique-block">
+                            <h5>Для становой тяги:</h5>
+                            <ul>
+                                <li>Гиперэкстензия — 3×15</li>
+                                <li>Тяга штанги в наклоне — 3×10</li>
+                                <li>Подтягивания — 3×8</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Тесты и нормативы -->
+                    <div class="content-card">
+                        <h3>📊 Нормативы (разряды) для мужчин IPF RAW</h3>
+                        <ul>
+                            <li><strong>1 разряд (до 83 кг):</strong> сумма 550 кг</li>
+                            <li><strong>КМС (до 83 кг):</strong> сумма 620 кг</li>
+                            <li><strong>МС (до 83 кг):</strong> сумма 690 кг</li>
+                            <li><strong>МСМК (до 83 кг):</strong> сумма 800 кг</li>
+                        </ul>
+                        <p><strong>Соотношение веса к сумме:</strong> элитный уровень — сумма более 5×веса тела.</p>
+                    </div>
+                    
+                    <!-- Питание -->
+                    <div class="content-card">
+                        <h3>🥗 Питание пауэрлифтера</h3>
+                        <ul>
+                            <li><strong>Белки:</strong> 1.5-2 г на кг веса (мясо, рыба, яйца, творог)</li>
+                            <li><strong>Углеводы:</strong> 4-6 г на кг (гречка, рис, овсянка, макароны)</li>
+                            <li><strong>Жиры:</strong> 0.8-1 г на кг (орехи, масла, авокадо)</li>
+                            <li><strong>Питьевой режим:</strong> 2-3 л воды в день</li>
+                            <li><strong>До тренировки:</strong> углеводы + кофеин</li>
+                            <li><strong>После тренировки:</strong> белки + углеводы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка Тест -->
+            <div class="tab-content" id="test">
+                <h2>Тест: Проверь свои знания о пауэрлифтинге</h2>
+                <div class="test-container" id="testContainer">
+                    <!-- Сюда будут добавляться вопросы -->
+                </div>
+                <div class="test-result" id="testResult"></div>
+                <button class="btn btn--primary" id="submitTest">Проверить ответы</button>
+                <button class="btn btn--secondary" id="resetTest" style="margin-left: 10px;">Пройти заново</button>
+            </div>
+
+            <!-- Вкладка Разминка -->
+            <div class="tab-content" id="warmup">
+                <h2>🏋️ Разминка перед тренировкой</h2>
+                <p class="warmup-intro">Чтобы избежать травм и работать с большими весами, обязательно разминайся 10-15 минут перед подходом.</p>
+                
+                <div class="warmup-table">
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Кардио</div>
+                        <div class="warmup-cell">Велотренажёр или лёгкий бег</div>
+                        <div class="warmup-cell">5 мин</div>
+                        <div class="warmup-cell">Общий разогрев</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Суставы</div>
+                        <div class="warmup-cell">Вращение плечами, тазом, коленями</div>
+                        <div class="warmup-cell">по 15 раз</div>
+                        <div class="warmup-cell">Подготовить суставы</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Спец. присед</div>
+                        <div class="warmup-cell">Приседания без веса + с паузой</div>
+                        <div class="warmup-cell">20 раз</div>
+                        <div class="warmup-cell">Активировать ягодицы</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Спец. тяга</div>
+                        <div class="warmup-cell">Наклоны с прямой спиной (без веса)</div>
+                        <div class="warmup-cell">15 раз</div>
+                        <div class="warmup-cell">Разбудить спину</div>
+                    </div>
+                    <div class="warmup-row">
+                        <div class="warmup-cell">Спец. жим</div>
+                        <div class="warmup-cell">Отжимания или жим пустого грифа</div>
+                        <div class="warmup-cell">15 раз</div>
+                        <div class="warmup-cell">Включить грудь и трицепс</div>
+                    </div>
+                </div>
+                
+                <div class="warmup-tip">
+                    <strong>⚠️ Важно:</strong> в пауэрлифтинге основной разогрев — это подходы с пустым грифом и малыми весами!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="../index.html" class="logo">Sport<span>Hub</span></a>
+                    <p class="footer__copy">© 2026 SportHub. Все права защищены.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="volleyball.html">Волейбол</a></li>
+                        <li><a href="football.html">Футбол</a></li>
+                        <li><a href="basketball.html">Баскетбол</a></li>
+                        <li><a href="athletics.html">Лёгкая атлетика</a></li>
+                        <li><a href="powerlifting.html">Пауэрлифтинг</a></li>
+                        <li><a href="fitness.html">Фитнес</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4>Проект выполнил</h4>
+                    <p>Тарощин Дмитрий<br>10 «А» класс</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    
+    <!-- Тест по пауэрлифтингу -->
+    <script>
+    const powerliftingTest = {
+        questions: [
+            {
+                question: "Сколько упражнений в пауэрлифтинге?",
+                options: ["2", "3", "4", "5"],
+                correct: 1
+            },
+            {
+                question: "Какие упражнения входят в пауэрлифтинг?",
+                options: ["Присед, жим лежа, становая тяга", "Рывок, толчок, присед", "Жим стоя, тяга, присед", "Жим лежа, тяга верхняя, присед"],
+                correct: 0
+            },
+            {
+                question: "Как называется экипировка для пауэрлифтинга?",
+                options: ["Однослойная", "Многослойная", "Оба варианта", "Без экипировки"],
+                correct: 2
+            },
+            {
+                question: "Сколько подходов дается в каждом упражнении на соревнованиях?",
+                options: ["1", "2", "3", "4"],
+                correct: 2
+            },
+            {
+                question: "Что оценивают судьи?",
+                options: ["Вес штанги", "Технику выполнения", "Скорость подъема", "Все вышеперечисленное"],
+                correct: 3
+            },
+            {
+                question: "Какой вес штанги в приседаниях у мужчин в экипировке?",
+                options: ["Не ограничен", "До 300 кг", "До 400 кг", "Зависит от категории"],
+                correct: 0
+            },
+            {
+                question: "Что такое 'лифтерский мост' в жиме лежа?",
+                options: ["Прогиб в спине", "Упражнение на мостике", "Специальная экипировка", "Помощь тренера"],
+                correct: 0
+            },
+            {
+                question: "Сколько судей на соревнованиях по пауэрлифтингу?",
+                options: ["1", "2", "3", "4"],
+                correct: 2
+            },
+            {
+                question: "Что означает команда 'Стойка' в приседаниях?",
+                options: ["Начать упражнение", "Закончить упражнение", "Поставить штангу", "Сменить стойку"],
+                correct: 0
+            },
+            {
+                question: "Какая федерация самая строгая в плане допинг-контроля?",
+                options: ["IPF", "WRPF", "WPC", "AWPC"],
+                correct: 0
+            }
+        ]
+    };
+
+    function renderTest(testData) {
+        const container = document.getElementById('testContainer');
+        if (!container) return;
+        
+        let html = '';
+        testData.questions.forEach((q, index) => {
+            html += `
+                <div class="question-card" id="question-${index}">
+                    <div class="question-text">${index + 1}. ${q.question}</div>
+                    <ul class="options-list">
+            `;
+            
+            q.options.forEach((option, optIndex) => {
+                html += `
+                    <li class="option-item" data-question="${index}" data-option="${optIndex}" onclick="selectOption(${index}, ${optIndex})">
+                        ${option}
+                    </li>
+                `;
+            });
+            
+            html += `</ul></div>`;
+        });
+        
+        container.innerHTML = html;
+    }
+
+    window.selectOption = function(questionIndex, optionIndex) {
+        const options = document.querySelectorAll(`#question-${questionIndex} .option-item`);
+        options.forEach(opt => opt.classList.remove('selected'));
+        options[optionIndex].classList.add('selected');
+    }
+
+    function checkTest() {
+        const questions = document.querySelectorAll('.question-card');
+        let correctCount = 0;
+        const testData = window.currentTest;
+        
+        questions.forEach((q, index) => {
+            const selected = q.querySelector('.option-item.selected');
+            const correctIndex = testData.questions[index].correct;
+            const options = q.querySelectorAll('.option-item');
+            
+            options.forEach((opt, optIndex) => {
+                opt.classList.add('disabled');
+                if (optIndex === correctIndex) {
+                    opt.classList.add('correct');
+                } else if (opt.classList.contains('selected') && optIndex !== correctIndex) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            if (selected && parseInt(selected.dataset.option) === correctIndex) {
+                correctCount++;
+            }
+        });
+        
+        const resultDiv = document.getElementById('testResult');
+        const percentage = Math.round((correctCount / testData.questions.length) * 100);
+        
+        let resultClass = '';
+        if (percentage >= 80) resultClass = 'good';
+        else if (percentage >= 50) resultClass = 'normal';
+        else resultClass = 'bad';
+        
+        resultDiv.className = `test-result ${resultClass}`;
+        resultDiv.innerHTML = `Вы ответили правильно на ${correctCount} из ${testData.questions.length} вопросов (${percentage}%)`;
+        
+        document.getElementById('submitTest').disabled = true;
+    }
+
+    function resetTest() {
+        const questions = document.querySelectorAll('.question-card');
+        questions.forEach(q => {
+            const options = q.querySelectorAll('.option-item');
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect', 'disabled');
+            });
+        });
+        
+        document.getElementById('testResult').innerHTML = '';
+        document.getElementById('testResult').className = 'test-result';
+        document.getElementById('submitTest').disabled = false;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('testContainer')) {
+            window.currentTest = powerliftingTest;
+            renderTest(powerliftingTest);
+            
+            document.getElementById('submitTest').addEventListener('click', checkTest);
+            document.getElementById('resetTest').addEventListener('click', resetTest);
+        }
+    });
+    </script>
+    
+    <script src="../js/sport-page.js"></script>
+</body>
+</html>
